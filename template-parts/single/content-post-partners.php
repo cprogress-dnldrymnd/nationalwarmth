@@ -11,11 +11,7 @@
     <div class="container small-container">
 
         <?php the_content() ?>
-        <div class="back-to mt-5 text-center">
-            <a href="<?= get_permalink(get_option('page_for_posts')) ?>" class="underline-link">
-                Back to blog
-            </a>
-        </div>
+      
     </div>
 </section>
 
