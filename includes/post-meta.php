@@ -424,8 +424,8 @@ class ModulesFields extends GetData
 				array(
 					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
 					Field::make('text', 'heading', 'Heading'),
-					Field::make('html', 'html_partners', __('Logos'))->set_html('This will display partners sliders')
-				)
+					Field::make('html', 'html_partners', __('Logos'))
+					->set_html('This module will display Partners List. Manage Partners <a target="_blank" href="/wp-admin/edit.php?post_type=partners"> here </a>.'),
 			)
 		);
 	}
