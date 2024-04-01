@@ -10194,8 +10194,57 @@ textarea {
     background-color: transparent;
     color: #c6c9ce;
     font-size: 17px; }
+  .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white-color); }
+    .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next span {
+      position: relative;
+      z-index: 1; }
+      .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next span:not(:last-child) {
+        margin-right: 0.75rem; }
+      .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next span.icon {
+        margin-top: -3px; }
+    .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:not(.nav-link) {
+      border: 2px solid transparent;
+      padding: 10px 1.5rem; }
+    .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next.nav-link {
+      padding: 10px 1.5rem;
+      border: 1px solid transparent; }
+    @media screen and (min-width: 992px) {
+      .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next {
+        white-space: nowrap; } }
+    @media screen and (max-width: 767px) {
+      .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next {
+        padding: 1rem 1.5rem; } }
+    .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:hover, .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:active, .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:focus {
+      background-color: var(--white-color) !important;
+      color: var(--secondary-color) !important; }
 
-.form-section .inner {
+.form-section .fields-holder {
   max-width: 385px;
   margin-left: auto;
   margin-right: auto; }

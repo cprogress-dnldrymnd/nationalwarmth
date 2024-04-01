@@ -585,11 +585,21 @@ textarea {
             color: #c6c9ce;
             font-size: 17px;
         }
+        .cf7mls_next {
+            @include button-style;
+            border-color: var(--secondary-color);
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            @include on-event {
+                background-color: var(--white-color) !important;
+                color: var(--secondary-color) !important;
+            }
+        }
     }
 }
 
 .form-section {
-    .inner {
+    .fields-holder {
         max-width: 385px;
         margin-left: auto;
         margin-right: auto;
