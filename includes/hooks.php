@@ -26,17 +26,6 @@ function action_close_footer()
 add_action('close_footer', 'action_close_footer');
 
 
-//Disable Gutenberg
-function disable_gutenberg()
-{
-	$Theme_Options = new Theme_Options();
-	if ($Theme_Options->disable_gutenberg) {
-		add_filter('use_block_editor_for_post', '__return_false');
-	}
-}
-
-add_action('init', 'disable_gutenberg');
-
 
 //Allow shortcode in menu
 add_filter('wp_nav_menu_items', 'do_shortcode');
