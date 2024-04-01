@@ -1,0 +1,275 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+/*FLEX BOXES*/
+.centered {
+	@include centered;
+}
+.justify-content-between {
+	@include justify-content(space-between);
+}
+.align-center {
+	@include display-flex;
+	@include align-items(center);
+}
+.align-center-right {
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(flex-end);
+}
+.align-items-center {
+	@include align-items(center);
+}
+.align-end {
+	@include display-flex;
+	@include align-items(flex);
+	@include justify-content(flex-end);
+	
+}
+.justify-flex-end {
+	@include display-flex;
+	@include justify-content(flex-end);
+}
+.justify--flex-end {
+	@include justify-content(flex-end);
+}
+.justify-center {
+	@include display-flex;
+	@include justify-content(center);
+}
+.align-flex-end {
+	@include display-flex;
+	@include align-items(flex-end);
+}
+/*Container*/
+.container {
+	&.small-container {
+		@include responsive(sm-lg) {
+			max-width: 815px;
+		}
+	}
+	&.extra-small-container {
+		max-width: 400px;
+	}
+}
+
+/*Padding*/
+.xs-padding {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+.sm-padding {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.md-padding {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.md-padding-bottom {
+	padding-bottom: 5rem;
+}
+.lg-padding {
+	@include responsive(md-lg) {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
+	@include responsive(sm) {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	@include responsive(xs) {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+.xl-padding {
+	@include responsive(md-lg) {
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+	}
+	@include responsive(sm) {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
+	}
+	@include responsive(xs) {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+/*Background*/
+.background-primary {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+.background-secondary {
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+}
+.background-accent {
+	background-color: var(--accent-color);
+	color: var(--white-color);
+}
+.background-gray {
+	background-color: var(--gray-color);
+}
+.background-gray-3 {
+	background-color: var(--gray-color-3);
+}
+.background-white {
+	background-color: var(--white-color);
+}
+.background-pattern {
+	background-image: url($image-url + 'white-wall.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.bg-image {
+	background-size: cover;
+	background-position: center;
+	&.bg-fixed {
+		@include responsive(md-lg) {
+			background-attachment: fixed;
+		}
+	}
+}
+
+.background-image {
+	@include absolute-corner;
+	> img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	+ div {
+		position: relative;
+	}
+	&:not(.no-overlay) {
+		@include overlay;
+	}
+}
+
+.overlay {
+	@include overlay;
+	> div {
+		position: relative;
+	}
+}
+/*Overlay*/
+/*Colors*/
+.text-white {
+	p {
+		color: inherit;
+	}
+}
+.text-primary {
+	color: var(--primary-color) !important;
+	p {
+		color: inherit;
+	}
+}
+
+/*Margins*/
+.content-margin {
+	> * {
+		@include not-last-child {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+/*Visibility*/
+.hide-sm {
+	@include responsive(xs-sm) {
+		display: none;
+	}
+}
+.hide-xs {
+	@include responsive(xs) {
+		display: none;
+	}
+}
+/*Others*/
+.with-separator {
+	> * {
+		@include not-last-child {
+			@include after {
+				content: '';
+				width: 118px;
+				display: block;
+				margin: 2.5rem auto;
+				border-bottom: 1px dotted var(--white-color);
+			}
+		}
+	}
+}
+
+.fullheight {
+	min-height: 100vh;
+}
+
+.fullheight-desktop {
+	@include responsive(md-lg) {
+		min-height: 100vh;
+	}
+}
+
+
+
+/*font family*/
+.primary-font {
+	font-family: var(--primary-font);
+}
+.secondary-font {
+	font-family: var(--secondary-font);
+}
+.accent-font {
+	font-family: var(--accent-font);
+	@include headings {
+		font-weight: 400;
+		line-height: 1;
+	}
+}
+
+/*font-size*/
+.small-font-size {
+	font-size: 14px;
+} 
+
+.padding-left-right {
+	@include responsive(md-lg) {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	@include responsive(xs-sm) {
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+	}
+}
+/*text-color*/
+.accent-color {
+	color: var(--accent-color);
+}
+
+.light-color {
+	color: var(--light-color);
+}
+
+/*container*/
+.medium-container {
+	@include responsive(xl) {
+		max-width: 1140px;
+	}
+}
+.large-container {
+	@media(min-width: 1600px) {
+		max-width: 1570px;
+	}
+}
+
+/*margins*/
+.no-margin {
+	@include headings {
+		margin-bottom: 0;
+	}
+}

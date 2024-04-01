@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$base-url: './assets/' !default;
+$image-url: './assets/images/' !default;
+$font-url: './assets/fonts/' !default;
+
+$primary-font: 'Outfit', sans-serif;
+$primary-color: #293847;
+$secondary-color: #15A198;
+$white-color: #ffffff;
+$black-color: #000000;
+$gray-color: #F6F6F6;
+$gray-color-2: #808080;
+$gray-color-3: #F3F3F3;
+$border-color: #DBDBDB;
+$accent-color: #E53F1E;
+$light-color: #949AA1;
+:root {
+	--primary-font: #{$primary-font};
+	--primary-color: #{$primary-color};
+	--secondary-color: #{$secondary-color};
+	--white-color: #{$white-color};
+	--black-color: #{$black-color};
+	--gray-color: #{$gray-color};
+	--gray-color-2: #{$gray-color-2};
+	--gray-color-3: #{$gray-color-3};
+	--border-color: #{$border-color};
+	--accent-color: #{$accent-color};
+	--light-color: #{$light-color};
+}

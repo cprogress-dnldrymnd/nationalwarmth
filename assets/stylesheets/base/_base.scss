@@ -1,0 +1,333 @@
+//-----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+html, body {
+    overflow-x: hidden;
+    margin: 0 !important;
+    position: relative;
+    &.menu-active {
+        overflow: hidden;
+    }
+}
+body {
+    overflow: hidden;
+    &.mega-menu-header-menu {
+        .navbar-collapse {
+            display: block !important;
+        }
+        .mobile-buttons {
+            display: none !important;
+        }
+    }
+}
+main {
+    @include responsive(xs-sm) {
+        margin-top: 101px;
+    }
+    @include responsive(99px) {
+        margin-top: 101px;
+    }
+    @include responsive(mobile) {
+        margin-top: 80.61px;
+    }
+}
+section {
+    position: relative;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+}
+p {
+    @include last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+.button-box.button-box {
+    @include button {
+        @include button-style;
+    }
+    &.button-accent {
+        @include button {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+            @include on-event {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+    &.button-bordered {
+        @include button {
+            border-color: inherit;
+            @include on-event {
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+                border-color: var(--secondary-color);
+            }
+        }
+
+    }
+    &.button-primary {
+        @include button {
+            border-color: var(--primary-color);
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            @include on-event {
+                background-color: var(--white-color) !important;
+                color: var(--primary-color) !important;
+            }
+        }
+
+    }
+    &.button-secondary {
+        @include button {
+            border-color: var(--secondary-color);
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            @include on-event {
+                background-color: var(--white-color) !important;
+                color: var(--secondary-color) !important;
+            }
+        }
+
+    }
+    &.button-big {
+        @include button {
+            font-size: 1.5rem;
+            padding: 1.125rem 1.5rem;
+        }
+    }
+    &.icon-sixty-seconds {
+        @include button {
+            @include before {
+                content: '';
+                width: 57px;
+                height: 40px;
+                background-image: url(./assets/images/60secs.png);
+                position: absolute;
+                right: -30px;
+                bottom: -20px;
+                background-repeat: no-repeat;
+                background-position: 5px;
+                background-size: calc(100% - 10px);
+                background-color: var(--accent-color);
+                z-index: 1;
+                border-radius: 50%;
+                @include transition(300ms);
+            }
+            @include on-event {
+                @include before {
+                }
+            }
+        }
+    }
+}
+
+.button-group-box {
+    @include display-flex;
+    .button-box {
+        @include not-last-child {
+            margin-right: 1rem;
+        }
+    }
+}
+
+input:not([type="submit"]):not(.qty):not([type="checkbox"]):not([type="radio"]):not(.search), select, textarea {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    padding: 13px;
+    line-height: 1;
+    font-size: 1rem;
+    &::placeholder {
+        color: #C6C9CE;
+    }
+}
+select {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 13px;
+    letter-spacing: 0.9px;
+    color: var(--gray-color-2);
+    outline: none;
+    font-family: var(--secondary-font);
+}
+#wpadminbar {
+    @media screen and (max-width: 600px) {
+        position: fixed;
+    }
+}
+.page-title {
+    display: none;
+}
+
+
+.has-edit {
+    position: relative;
+    overflow: hidden;
+    @include on-event {
+        .edit-contents {
+            @include transform(translateX(0));
+            color: var(--white-color);
+        }
+    }
+}
+.edit-holder {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    .edit-contents {
+        z-index: 3;
+        background-color: var(--primary-color);
+        padding: 10px 20px;
+        display: inline-block;
+        color: var(--white-color);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        border-radius: 0 30px 30px 0;
+        border: none;
+        @include transform(translateX(-100%));
+        @include responsive(xs-sm) {
+            display: none;
+        }
+    }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--gray-color-2);
+    font-size: 11px;
+    font-weight: bold;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-prev {
+    left: -50px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-next {
+    right: -50px;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--gray-color-2);
+    border-radius: 50px;
+    font-size: 20px;
+}
+.swiper-pagination {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(center);
+    .swiper-pagination-bullet {
+        &.swiper-pagination-bullet-active{
+            background: var(--primary-color);
+            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+            height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+        }
+    }
+}
+
+
+.stars {
+    svg {
+        width: 1.5rem;
+        background-color: var(--secondary-color);
+        padding: 5px;
+        path {
+            fill: var(--white-color);
+        }
+        @include not-last-child {
+            margin-right: 5px;
+        }
+    }
+    .gray-star {
+        display: inherit;
+        svg {
+            background-color: var(--gray-color-2);
+        }
+    }
+}
+
+.grid-box {
+    padding: 48% 1rem 8% 1rem;
+}
+.image-info-box {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    .top-icon {
+        @includer respond-to(md-lg) {
+            max-width: 35px;
+        }
+    }
+}
+
+.mySwiper-Testimonial {
+    .swiper-slide {
+        .swiper-holder {
+            padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+            border-radius: 5px;
+            background-color: var(--white-color);
+            position: relative;
+            .stars  {
+                margin-right: 1rem;
+            }
+            .day {
+                @include responsive(mobile-xs) {
+                    font-size: 0.75rem;
+                }
+            }
+            .inner {
+                max-width: 300px;
+                .author-box {
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.subscribe-box {
+    input[type="email"] {
+        max-width: 275px;
+        @include responsive(xxs) {
+            max-width: 100%;
+            border-radius: 5px 5px 0 0 !important;
+            text-align: center;
+        }
+    }
+    input[type="submit"] {
+        @include responsive(xxs) {
+            border-radius: 0 0 5px 5px !important;
+        }
+    }
+
+    .wpcf7-spinner {
+        position: absolute;
+        right: -30px;
+        margin: 0;
+        bottom: 13px;
+    }
+    .description-box.mt-3 {
+        font-size: 14px;
+        a {
+            color: #25384A;
+        }
+    }
+    input {
+        @include responsive(xxs) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    [class*='col-'] {
+        @include responsive(xxs) {
+            flex: 0 0 100%;
+        }
+    }
+}
