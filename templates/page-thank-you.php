@@ -44,6 +44,6 @@ $icon = get__post_meta('icon');
 
 <script>
     jQuery(document).ready(function() {
-        jQuery('input[name="your-email"]').val(<?= $_GET['email'] ?>);
+        jQuery('input[name="your-email"]').val('<?= $_GET['email'] ?>');
     });
 </script>
