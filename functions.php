@@ -20,41 +20,62 @@ function action_after_setup_theme() {
 	global $modules_section, $theme_settings;
 	$modules_section = array(
 		array(
-			'id'=>'templates',
+			'id' => 'templates',
 			'label' => 'Templates'
 		),
 		array(
-			'id'=>'hero_banner_slider',
-			'label' => 'Hero Banner Slider'
+			'id' => 'cta',
+			'label' => 'CTA'
 		),
 		array(
-			'id'=>'logo_slider',
+			'id' => 'cta_v2',
+			'label' => 'CTA V2'
+		),
+		array(
+			'id' => 'services_grid',
+			'label' => 'Services Grid'
+		),
+		array(
+			'id' => 'logo_slider',
 			'label' => 'Logo Slider'
 		),
 		array(
-			'id'=>'two_columns',
-			'label' => 'Two Columns'
+			'id' => 'image_info_boxes',
+			'label' => 'Image Info Boxes'
 		),
 		array(
-			'id'=>'image_and_logo',
-			'label' => 'Image and Logo'
+			'id' => 'testimonials',
+			'label' => 'Testimonials'
 		),
 		array(
-			'id'=>'text_section',
-			'label' => 'Text Section'
+			'id' => 'two_column_image_text',
+			'label' => 'Two Column Image Text'
 		),
 		array(
-			'id'=>'featured_text_section',
-			'label' => 'Featured Text Section'
+			'id' => 'accordion',
+			'label' => 'Accordion'
 		),
 		array(
-			'id'=>'text_with_images',
-			'label' => 'Text with Images'
+			'id' => 'accordion_right',
+			'label' => 'Accordion Right'
 		),
 		array(
-			'id'=>'wysiwyg',
+			'id' => 'icon_section',
+			'label' => 'Icon Section'
+		),
+		array(
+			'id' => 'contact_form',
+			'label' => 'Contact Form'
+		),
+		array(
+			'id' => 'teams',
+			'label' => 'Teams'
+		),
+		array(
+			'id' => 'wysiwyg',
 			'label' => 'Wysiwyg'
 		),
+
 	);
 
 	
