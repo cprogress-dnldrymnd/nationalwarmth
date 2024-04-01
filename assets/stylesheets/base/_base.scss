@@ -10,7 +10,6 @@ body {
     }
 }
 body {
-    overflow: hidden;
     &.mega-menu-header-menu {
         .navbar-collapse {
             display: block !important;
@@ -657,5 +656,11 @@ textarea {
 .admin-bar {
     .form-progress {
         top: 32px;
+    }
+}
+
+.page-template-page-form {
+    section {
+        overflow: auto;
     }
 }
