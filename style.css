@@ -10731,8 +10731,8 @@ section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
   font-size: 1.125rem; }
   @media screen and (min-width: 992px) {
     section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem; } }
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link {
     color: var(--primary-color);
     border-bottom: 1px solid transparent; }
@@ -10887,7 +10887,7 @@ section.header-navigation + .header-bottom {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); } }
 
 @media screen and (max-width: 991px) {
-  section.header-icon-list [class*='container'] {
+  section.header-icon-list [class*="container"] {
     padding: 0;
     max-width: 100%; } }
 section.header-icon-list ul li a {
