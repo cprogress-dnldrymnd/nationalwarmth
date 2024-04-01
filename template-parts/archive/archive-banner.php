@@ -1,7 +1,12 @@
 <?php
 $DisplayData = new DisplayData;
 if (is_single()) {
-	$title = 'Blog: '.get_the_title();
+	if(get_post_type() == 'post') {
+		$title = 'Blog: '.get_the_title();
+
+	} else {
+		$title = get_the_title();
+	}
 } else {
 	if (is_home()) {
 		$alt_title = carbon_get_theme_option('post_alt_title');
@@ -12,6 +17,7 @@ if (is_single()) {
 	if (is_search()) {
 		$title = 'Search results for ' . $_GET['s'];
 	} else {
+		
 		$alt_title = carbon_get_theme_option(get_post_type() . '_alt_title');
 		$title = $alt_title ? $alt_title : get_the_archive_title();
 		$description = get_the_archive_description() ? get_the_archive_description() : carbon_get_theme_option(get_post_type() . '_description');
