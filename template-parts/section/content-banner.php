@@ -15,11 +15,8 @@ $background_mobile = $background_image_mobile ? 'class="background-image bg-imag
 
 $container_holder_class = '';
 
-if (is_single()) {
-	$title = 'Articles';
-} else {
-	$title = get__post_meta('alt_title') ? get__post_meta('alt_title') : get_the_title();
-}
+$title = get__post_meta('alt_title') ? get__post_meta('alt_title') : get_the_title();
+
 
 if ($page_banner_style == 'style-1') {
 	$container_holder_class = 'title-container background-accent';
