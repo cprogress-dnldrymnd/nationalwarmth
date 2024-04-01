@@ -57,6 +57,7 @@ function action_after_setup_theme() {
 		),
 	);
 
+	
 	$theme_settings = array(
 		array(
 			'id' => 'general_settings',
@@ -71,8 +72,8 @@ function action_after_setup_theme() {
 			'label' => 'Before Footer'
 		),
 		array(
-			'id' => 'company_details',
-			'label' => 'Company Details'
+			'id' => 'brand_details',
+			'label' => 'Brand Details'
 		),
 		array(
 			'id' => 'header_settings',
@@ -82,10 +83,11 @@ function action_after_setup_theme() {
 			'id' => 'footer_settings',
 			'label' => 'Footer Settings'
 		),
-		
+		array(
+			'id' => 'sticky_cta',
+			'label' => 'Sticky CTA'
+		)
 	);
-	require_once( 'plugins/carbon-fields/vendor/autoload.php' );
-	\Carbon_Fields\Carbon_Fields::boot();
 
 }
 add_action( 'after_setup_theme', 'action_after_setup_theme' );
