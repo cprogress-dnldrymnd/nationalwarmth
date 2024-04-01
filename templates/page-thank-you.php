@@ -3,7 +3,7 @@
 /* Template Name: Thank You 
 /*-----------------------------------------------------------------------------------*/
 ?>
-<?php get_header(); ?>
+<?php get_header('form'); ?>
 <?php
 $icon = get__post_meta('icon');
 ?>
@@ -40,4 +40,4 @@ $icon = get__post_meta('icon');
     </section>
 
 </main>
-<?php get_footer(); ?>
+<?php get_footer('form'); ?>
