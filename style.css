@@ -10176,7 +10176,8 @@ textarea {
 
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label {
   display: inline-flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label input,
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label select {
     width: 100%; }
@@ -10188,6 +10189,11 @@ textarea {
     background-color: transparent;
     color: #c6c9ce;
     font-size: 17px; }
+
+.form-section .inner {
+  max-width: 385px;
+  margin-left: auto;
+  margin-right: auto; }
 
 @font-face {
   font-family: "Outfit";

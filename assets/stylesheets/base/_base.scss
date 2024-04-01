@@ -563,6 +563,7 @@ textarea {
     label {
         display: inline-flex;
         flex-direction: column;
+        width: 100%;
         input,
         select {
             width: 100%;
@@ -577,5 +578,13 @@ textarea {
             color: #c6c9ce;
             font-size: 17px;
         }
+    }
+}
+
+.form-section {
+    .inner {
+        max-width: 385px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
