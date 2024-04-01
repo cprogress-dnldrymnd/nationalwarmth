@@ -77,10 +77,10 @@ function swiper_slider() {
 				slidesPerView: 3,
 			},
 			1200: {
-				slidesPerView: 4,
+				slidesPerView: 5,
 			},
 			1400: {
-				slidesPerView: 5,
+				slidesPerView: 6,
 			},
 		},
 
