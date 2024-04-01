@@ -369,7 +369,7 @@ class ModulesFields extends GetData
 								)
 							),
 						Field::make('text', 'heading', 'Heading'),
-						Field::make('rich_text', 'description', 'Description'),
+						Field::make('textarea', 'description', 'Description'),
 					),
 					$PostMeta->_button('cta', 'BUTTON[1]'),
 					$PostMeta->_button('cta_2', 'BUTTON[2]'),
@@ -497,7 +497,7 @@ class ModulesFields extends GetData
 							array_merge(
 								array(
 									Field::make('text', 'heading', 'Heading'),
-									Field::make('rich_text', 'description', 'Description'),
+									Field::make('textarea', 'description', 'Description'),
 
 
 								),
@@ -522,7 +522,7 @@ class ModulesFields extends GetData
 					array(
 						Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
 						Field::make('text', 'heading', 'Heading'),
-						Field::make('rich_text', 'description', 'Description'),
+						Field::make('textarea', 'description', 'Description'),
 						Field::make('complex', 'accordion_items', 'Accordion Items')
 							->add_fields(
 								array(
@@ -629,7 +629,7 @@ class ModulesFields extends GetData
 						Field::make('checkbox', 'with_decoration', 'With Decoration')->set_width(75),
 						Field::make('image', 'image', 'Image'),
 						Field::make('text', 'heading', 'Heading'),
-						Field::make('rich_text', 'description', 'Description'),
+						Field::make('textarea', 'description', 'Description'),
 					),
 					$PostMeta->_button('two_col', 'Button')
 				)
@@ -663,8 +663,8 @@ class ModulesFields extends GetData
 					Field::make('text', 'heading', 'Heading'),
 					Field::make('textarea', 'description', 'Description'),
 					Field::make('checkbox', 'two_columns', 'Two Columns'),
-					Field::make('rich_text', 'wysiwyg', 'Wsiwyg'),
-					Field::make('rich_text', 'wysiwyg2', 'Wsiwyg 2')
+					Field::make('textarea', 'wysiwyg', 'Wsiwyg'),
+					Field::make('textarea', 'wysiwyg2', 'Wsiwyg 2')
 						->set_conditional_logic(
 							array(
 								array(
@@ -760,7 +760,7 @@ class ThemeOptionsMeta extends PostMeta
 	function footer_settings_fields()
 	{
 		return array(
-			Field::make('rich_text', 'copyright_text', 'Footer Text'),
+			Field::make('textarea', 'copyright_text', 'Footer Text'),
 			Field::make('media_gallery', 'footer_logos', 'Footer Logos'),
 		);
 	}
@@ -836,7 +836,7 @@ Container::make('post_meta', 'Page Banner')
 				Field::make('checkbox', 'hide_page_banner', 'Hide Page Banner'),
 				//Field::make('checkbox', 'display_review', 'Display Review'),
 				Field::make('text', 'alt_title', 'Alt Title'),
-				Field::make('rich_text', 'page_banner_description', 'Page Banner Description'),
+				Field::make('textarea', 'page_banner_description', 'Page Banner Description'),
 				Field::make('select', 'page_banner_style', 'Page Banner Style')
 					->set_options(
 						array(
@@ -947,7 +947,7 @@ Container::make('theme_options', __('Settings'))
 	->add_fields(
 		array(
 			Field::make('text', 'testimonial_heading', 'Heading'),
-			Field::make('rich_text', 'testimonial_description', 'Description'),
+			Field::make('textarea', 'testimonial_description', 'Description'),
 		)
 	);
 
@@ -1004,7 +1004,7 @@ Container::make('post_meta', 'Page Components')
 				->set_help_text('Will use default page banner or desktop if empty')->set_width(80),
 			Field::make('text', 'heading', 'Heading'),
 			Field::make('text', 'subheading', 'Subheading'),
-			Field::make('rich_text', 'description', 'Description'),
+			Field::make('textarea', 'description', 'Description'),
 			Field::make('text', 'contact_form', 'Contact Form')
 
 		)
@@ -1013,7 +1013,7 @@ Container::make('post_meta', 'Page Components')
 		'Text Bar',
 		array(
 			Field::make('text', 'text_bar_heading', 'Heading'),
-			Field::make('rich_text', 'text_bar_description', 'Description'),
+			Field::make('textarea', 'text_bar_description', 'Description'),
 		)
 	)
 	->add_tab(
