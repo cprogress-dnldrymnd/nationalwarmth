@@ -15,6 +15,17 @@ $icon = get__post_meta('icon');
             <div class="heading-box mb-4 mt-4">
                 <h2> <?= get__post_meta('alt_title') ? get__post_meta('alt_title') : get_the_title() ?> </h2>
             </div>
+            <div class="description-box">
+                <?php the_content() ?>
+            </div>
+            <div class="button-box  button-accent button-bordered">
+                <a href="<?= get_site_url() ?>">
+                    <span class="text">
+                        Return to home
+                    </span>
+                </a>
+            </div>
+
             <div class="subscribe-box">
 
                 <div class="form-box">
@@ -23,22 +34,6 @@ $icon = get__post_meta('icon');
             </div>
         </div>
     </section>
-    <section class="thank-you md-padding">
-        <div class="container">
-            <div class="inner text-center">
-
-                <div class="description-box">
-                    <?php the_content() ?>
-                </div>
-                <div class="button-box  button-accent button-bordered">
-                    <a href="<?= get_site_url() ?>">
-                        <span class="text">
-                            Return to home
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 </main>
 <?php get_footer(); ?>
