@@ -160,7 +160,7 @@ new newPostType(
 		'singular_name' => 'NW Template',
 		'icon'          => 'dashicons-media-document',
 		'rewrite'       => array('slug' => 'template'),
-		'supports'      => array('title', 'revisions'),
+		'supports'      => array('title', 'revisions', 'editor'),
 		'show_in_rest' => true,
 	)
 );
