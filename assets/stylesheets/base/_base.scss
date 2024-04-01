@@ -49,14 +49,6 @@ a {
     text-decoration: none;
 }
 
-.wpcf7-submit {
-    @include button-style;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    @include on-event {
-        background-color: var(--secondary-color);
-    }
-}
 .button-box.button-box {
     @include button {
         @include button-style;
