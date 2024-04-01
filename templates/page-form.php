@@ -35,7 +35,7 @@ $icon = get__post_meta('icon');
         jQuery('.cf7mls_back, .cf7mls_next').click(function(e) {
             $current = jQuery('.fieldset-cf7mls.cf7mls_current_fs');
             $progress_width = $current.attr('progress-width');
-
+            console.log($progress_width);
             jQuery('.progress-holder').css('--progress-width', $progress_width + '%');
 
             e.preventDefault();
