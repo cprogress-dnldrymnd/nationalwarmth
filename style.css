@@ -11002,21 +11002,21 @@ section.footer-navigation {
 /*-----------------------------------------------------------------------------------*/
 /* Sections
 /*-----------------------------------------------------------------------------------*/
-section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder {
+section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder {
   position: relative; }
-  section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder:before {
-    content: 'next';
+  section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder:before {
+    content: "next";
     font-family: swiper-icons;
     text-transform: none !important;
     letter-spacing: 0;
     text-transform: none;
     font-variant: initial;
     line-height: 1;
-    color: #DEDEDE;
+    color: #dedede;
     position: absolute;
     font-size: 20px; }
     @media screen and (min-width: 992px) {
-      section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder:before {
+      section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder:before {
         right: 0;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -11025,7 +11025,7 @@ section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder {
         -o-transform: translateY(-50%);
         transform: translateY(-50%); } }
     @media screen and (max-width: 991px) {
-      section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder:before {
+      section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder:before {
         bottom: 0;
         left: 50%;
         -webkit-transform: translateX(-50%) rotate(90deg);
@@ -11034,7 +11034,7 @@ section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder {
         -o-transform: translateX(-50%) rotate(90deg);
         transform: translateX(-50%) rotate(90deg); } }
   @media screen and (max-width: 991px) {
-    section.image-info-boxes .row [class*='col-']:not(:last-child) .column-holder .description-box {
+    section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder .description-box {
       padding-bottom: 2rem; } }
 
 section.testimonials {
@@ -11059,5 +11059,11 @@ section.page-banner.style-1 {
     margin-bottom: -6.25rem; }
     section.page-banner.style-1 .container-holder .heading-box h2 {
       margin-bottom: 1rem; }
+
+section.thank-you .description-box {
+  margin-bottom: 3rem;
+  color: #949aa1; }
+section.thank-you .subscribe-box {
+  margin-bottom: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

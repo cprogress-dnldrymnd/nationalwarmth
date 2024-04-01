@@ -29,7 +29,7 @@ $icon = get__post_meta('icon');
                 </div>
             </div>
 
-            <div class="button-box  button-accent button-bordered">
+            <div class="button-box   button-bordered">
                 <a href="<?= get_site_url() ?>">
                     <span class="text">
                         Return to home

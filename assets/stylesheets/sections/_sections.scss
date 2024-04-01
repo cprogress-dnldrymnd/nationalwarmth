@@ -1,18 +1,18 @@
 section.image-info-boxes {
 	.row {
-		[class*='col-'] {
+		[class*="col-"] {
 			@include not-last-child {
 				.column-holder {
 					position: relative;
 					@include before {
-						content: 'next';
+						content: "next";
 						font-family: swiper-icons;
-						text-transform: none!important;
+						text-transform: none !important;
 						letter-spacing: 0;
 						text-transform: none;
 						font-variant: initial;
 						line-height: 1;
-						color: #DEDEDE;
+						color: #dedede;
 						position: absolute;
 						font-size: 20px;
 						@include responsive(md-lg) {
@@ -64,5 +64,15 @@ section.page-banner {
 				}
 			}
 		}
+	}
+}
+
+section.thank-you {
+	.description-box {
+		margin-bottom: 3rem;
+		color: #949aa1;
+	}
+	.subscribe-box {
+		margin-bottom: 3rem;
 	}
 }
