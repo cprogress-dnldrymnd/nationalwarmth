@@ -1,7 +1,8 @@
 $white: #fff;
 $main_color: #23282d;
 $gray: #cecece;
-$karla: 'Karla', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$karla: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+	sans-serif;
 $blue: #2271b1;
 @mixin black-white {
 	background-color: $main_color;
@@ -11,7 +12,6 @@ $blue: #2271b1;
 	background-color: $white;
 	color: $main_color;
 }
-
 
 @mixin gray-black {
 	background-color: $gray;
@@ -33,9 +33,9 @@ $blue: #2271b1;
 				ul.cf-container__tabs-list {
 					li.cf-container__tabs-item {
 						width: 100%;
-						margin: 0;	
+						margin: 0;
 						border: none;
-						letter-spacing: .5px;
+						letter-spacing: 0.5px;
 						text-transform: uppercase;
 						@include black-white;
 						&.cf-container__tabs-item--current {
@@ -57,7 +57,7 @@ $blue: #2271b1;
 		}
 	}
 	&:before {
-		content: 'Theme Options';
+		content: "Theme Options";
 		font-size: 22px;
 		background-color: $main_color;
 		position: absolute;
@@ -116,7 +116,7 @@ body {
 	z-index: 2;
 }
 .cf-complex__tabs-item--tabbed-vertical.cf-complex__tabs-item--current {
-	color: #fff!important;
+	color: #fff !important;
 	background-color: #32373c !important;
 }
 
@@ -130,11 +130,11 @@ body {
 				width: 20%;
 				span {
 					&:before {
-						content: 'Column '
+						content: "Column ";
 					}
 				}
 				&.cf-complex__tabs-item--current {
-					color: #fff!important;
+					color: #fff !important;
 					background-color: #32373c !important;
 				}
 			}
@@ -158,7 +158,6 @@ body {
 	}
 }
 
-
 .cf-field.cf-html.seperator {
 	font-weight: bold;
 	background-color: #1d2327;
@@ -177,7 +176,6 @@ body {
 .cf-complex--grid .cf-complex__group.cf-complex__group {
 	margin-bottom: 30px;
 }
-
 
 .mce-menu.mce-menu .mce-menu-item.mce-active.mce-menu-item-preview {
 	background-color: #3b3b3b !important;
@@ -205,11 +203,153 @@ body {
 		font-size: 20px;
 		vertical-align: top;
 		text-align: center;
-		transition: color .1s ease-in;
+		transition: color 0.1s ease-in;
 		margin-right: 5px;
 	}
 }
 
 .cf-complex__group-head {
 	background-color: $blue;
+}
+
+.carbon-theme-options {
+	h2 {
+		background-color: #1d2327;
+		color: #fff;
+		padding: 10px !important;
+		letter-spacing: 1px;
+		font-weight: bold !important;
+	}
+}
+
+.cf-container.cf-container {
+	.cf-field__label {
+	}
+	input[type="date"],
+	input[type="datetime-local"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="month"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="url"],
+	input[type="week"],
+	select,
+	textarea {
+		border-radius: 0;
+		padding: 10px;
+		line-height: 1;
+		min-height: 40px;
+	}
+}
+
+.block-editor.block-editor .cf-media-gallery__item {
+	flex-basis: 100px;
+}
+
+.block-editor .cf-field .cf-search-input__inner,
+.cf-container .cf-search-input__inner {
+	padding-left: 35px !important;
+}
+
+.svg-list {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		flex: 0 0 10%;
+		text-align: center;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 !important;
+		width: 10%;
+		position: relative;
+		button {
+			border: none;
+			background: none;
+			width: 100%;
+			height: 50px;
+			cursor: pointer;
+		}
+		svg {
+			width: 100%;
+			height: 50px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			left: -1px;
+			top: -1px;
+			right: -1px;
+			bottom: -1px;
+			border: 1px solid;
+			z-index: -1;
+		}
+	}
+}
+
+#TB_ajaxContent {
+	width: calc(100% - 30px) !important;
+	padding: 0;
+}
+
+#TB_window {
+	background-color: #e2e2e2 !important;
+}
+
+.nice-select.nice-select {
+	color: #282124;
+	float: none;
+	width: auto;
+	border-radius: 0;
+	border-color: #929292;
+	padding-left: 40px;
+
+	.list {
+		height: 300px;
+		overflow: auto !important;
+		background-color: #ebebeb !important;
+		li {
+			background-repeat: no-repeat;
+			padding-left: 50px;
+			background-size: 30px;
+			background-position: 10px center;
+			background-color: #ebebeb;
+			border-bottom: 1px solid #bcbcbc;
+			margin: 0 !important;
+		}
+		&:hover {
+			li {
+				background-color: #bcbcbc;
+			}
+		}
+	}
+	&:before {
+		content: "";
+		width: 30px;
+		display: block;
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		bottom: 5px;
+		background-color: #d0d0d0;
+		background-size: 80% 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+[current-icon=""] {
+	padding-left: 10px !important;
+	&:before {
+		content: none !important;
+	}
+}
+
+#carbon_fields_container_modules {
+	z-index: 1;
 }

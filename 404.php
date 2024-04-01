@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main id="main" class="page-components">
-	<section class="not-found text-white text-center">
+	<section class="not-found text-center lg-padding background-primary">
 		<div class="container ">
 			<div class="heading-box">
 				<h1 class="">404</h1>
@@ -11,7 +11,6 @@
 			<div class="button-box button-accent" data-aos="fade-up">
 				<a href="<?= get_site_url() ?>" class="" role="button">
 					<span class="icon"> <i class="fa-solid fa-arrow-left"></i> </span>
-
 					<span class="text"> BACK TO HOME </span>
 				</a>
 			</div>
