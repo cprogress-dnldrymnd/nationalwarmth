@@ -713,7 +713,6 @@ class ThemeOptionsMeta extends PostMeta
 	function general_settings_fields()
 	{
 		return array(
-			Field::make('checkbox', 'disable_gutenberg', 'Disable Gutenberg'),
 			Field::make('image', 'default_page_banner', 'Default Page Banner'),
 		);
 	}
