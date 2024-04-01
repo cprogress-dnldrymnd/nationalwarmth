@@ -348,6 +348,12 @@ select {
     margin-left: auto;
     margin-right: auto;
 
+    .top-icon {
+        @include responsive(md-lg) {
+            max-width: 35px;
+        }
+    }
+
     .main-image {
         position: relative;
         padding: 20%;

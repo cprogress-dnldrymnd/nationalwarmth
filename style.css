@@ -10045,6 +10045,9 @@ select {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (min-width: 992px) {
+    .image-info-box .top-icon {
+      max-width: 35px; } }
   .image-info-box .main-image {
     position: relative;
     padding: 20%;
