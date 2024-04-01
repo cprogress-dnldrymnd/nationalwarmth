@@ -11104,4 +11104,7 @@ section.thank-you .button-bordered a {
   max-width: 385px;
   color: var(--secondary-color); }
 
+section.two-column-image-text img {
+  border-radius: 20px; }
+
 /*# sourceMappingURL=style.css.map */
