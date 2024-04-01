@@ -598,7 +598,7 @@ textarea {
             border-color: var(--secondary-color);
             background-color: var(--secondary-color);
             color: var(--white-color);
-            border: 2px solid var(--secondary-color);
+            border: 2px solid var(--secondary-color) !important;
             width: 100%;
             @include on-event {
                 background-color: var(--white-color) !important;
