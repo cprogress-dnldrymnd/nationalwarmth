@@ -160,8 +160,8 @@ new newPostType(
 		'singular_name' => 'Template',
 		'icon'          => 'dashicons-media-document',
 		'rewrite'       => array('slug' => 'template'),
-		'supports'      => array('title', 'revisions'),
-		'show_in_rest' => true
+		'supports'      => array('title', 'revisions', 'editor'),
+		'show_in_rest' => true,
 	)
 );
 
