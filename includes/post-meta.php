@@ -915,7 +915,7 @@ Container::make('post_meta', 'Modules')
 	->set_priority('high')
 	->where('post_template', '=', 'templates/modules.php')
 	->or_where('post_type', '=', 'services')
-	->or_where('post_type', '=', 'templates')
+	->or_where('post_type', '=', 'nwtemplates')
 	->add_fields(array($Modules->modules_post_meta()));
 
 
