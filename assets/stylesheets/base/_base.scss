@@ -304,6 +304,12 @@ textarea {
             }
         }
 
+        h2 {
+            @include responsive(mobile) {
+                font-size: 15px;
+            }
+        }
+
         @include responsive(md-lg) {
             @include before-after {
                 content: "";
@@ -324,6 +330,9 @@ textarea {
                 @include transition(500ms);
                 right: 0;
             }
+        }
+        @include responsive(mobile) {
+            padding: 1rem;
         }
     }
 
