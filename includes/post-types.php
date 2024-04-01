@@ -161,6 +161,7 @@ new newPostType(
 		'icon'          => 'dashicons-media-document',
 		'rewrite'       => array('slug' => 'template'),
 		'supports'      => array('title', 'revisions'),
+		'show_in_rest' => true
 	)
 );
 
