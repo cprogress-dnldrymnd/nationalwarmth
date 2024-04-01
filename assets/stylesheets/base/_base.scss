@@ -331,3 +331,119 @@ select {
         }
     }
 }
+
+
+.accordion-box {
+    .accordion {
+        .accordion-item {
+            margin-bottom: 20px;
+            padding: 2rem;
+            border-radius: 5px;
+            border: none;
+
+            .accordion-button {
+                background-color: transparent;
+                font-size: 1.5rem;
+                font-weight: 500;
+                @include box-shadow(none);
+                padding: 0;
+                color: inherit;
+
+                &:after {
+                    width: 2rem;
+                    height: 2rem;
+                    background-size: 2rem;
+                }
+
+                .icon {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    flex: 0 0 2.5rem;
+                    margin-right: 1.25rem;
+                }
+            }
+
+            .accordion-body {
+                padding: 2rem 0 0 0;
+            }
+        }
+    }
+
+    &:not(.accordion-no-icon) {
+        .accordion {
+            .accordion-item {
+                .accordion-body {
+                    padding-left: 3.75rem;
+                }
+            }
+        }
+    }
+
+    &.accordion-no-icon {
+        .accordion {
+            .accordion-item {
+                .accordion-button {
+                    font-size: 2.125rem;
+                    padding: 0;
+
+                    @include responsive(xs-sm) {
+                        font-size: 1.75rem;
+                    }
+
+                    @include responsive(xs) {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .accordion-body {
+                    padding-left: 0;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.title-container {
+    max-width: 915px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 3rem;
+
+    >.inner {
+        max-width: 737px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        >div {
+            @include not-last-child {
+                margin-bottom: 1.5rem !important;
+            }
+        }
+    }
+
+    .description-box {
+        font-size: 1.25rem;
+    }
+
+    .heading-box {
+        h2 {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    &.title-container-v2 {
+        padding: 4rem 3rem;
+
+        @include responsive(xs-sm) {
+            padding: 3rem 2rem;
+        }
+    }
+
+    @include responsive(xs-sm) {
+        padding: 2rem;
+    }
+}

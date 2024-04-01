@@ -10017,6 +10017,72 @@ select {
   .subscribe-box [class*='col-'] {
     flex: 0 0 100%; } }
 
+.accordion-box .accordion .accordion-item {
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-radius: 5px;
+  border: none; }
+  .accordion-box .accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    color: inherit; }
+    .accordion-box .accordion .accordion-item .accordion-button:after {
+      width: 2rem;
+      height: 2rem;
+      background-size: 2rem; }
+    .accordion-box .accordion .accordion-item .accordion-button .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      flex: 0 0 2.5rem;
+      margin-right: 1.25rem; }
+  .accordion-box .accordion .accordion-item .accordion-body {
+    padding: 2rem 0 0 0; }
+.accordion-box:not(.accordion-no-icon) .accordion .accordion-item .accordion-body {
+  padding-left: 3.75rem; }
+.accordion-box.accordion-no-icon .accordion .accordion-item .accordion-button {
+  font-size: 2.125rem;
+  padding: 0; }
+  @media screen and (max-width: 991px) {
+    .accordion-box.accordion-no-icon .accordion .accordion-item .accordion-button {
+      font-size: 1.75rem; } }
+  @media screen and (max-width: 767px) {
+    .accordion-box.accordion-no-icon .accordion .accordion-item .accordion-button {
+      font-size: 1.5rem; } }
+.accordion-box.accordion-no-icon .accordion .accordion-item .accordion-body {
+  padding-left: 0;
+  padding-bottom: 2rem; }
+
+.title-container {
+  max-width: 915px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 3rem; }
+  .title-container > .inner {
+    max-width: 737px;
+    margin-left: auto;
+    margin-right: auto; }
+    .title-container > .inner > div:not(:last-child) {
+      margin-bottom: 1.5rem !important; }
+  .title-container .description-box {
+    font-size: 1.25rem; }
+  .title-container .heading-box h2 {
+    margin-bottom: 1rem;
+    font-weight: 600; }
+  .title-container.title-container-v2 {
+    padding: 4rem 3rem; }
+    @media screen and (max-width: 991px) {
+      .title-container.title-container-v2 {
+        padding: 3rem 2rem; } }
+  @media screen and (max-width: 991px) {
+    .title-container {
+      padding: 2rem; } }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");
