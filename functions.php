@@ -76,6 +76,10 @@ function action_after_setup_theme()
 			'id' => 'wysiwyg',
 			'label' => 'Wysiwyg'
 		),
+		array(
+			'id' => 'form',
+			'label' => 'Form'
+		),
 
 	);
 
@@ -171,7 +175,6 @@ function enqueue_scripts()
 	//wp_enqueue_script('tissue-paper-main-fontawesome-js', vendor_dir . 'fontawesome/all.min.js');
 	wp_enqueue_script('tissue-paper-main-aos-js', vendor_dir . 'aos/aos.js');
 	wp_enqueue_script('tissue-paper-js', assets_dir . 'javascripts/main.js');
-
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts'); // Register this fxn and allow Wordpress to call it automatcally in the header

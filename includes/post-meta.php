@@ -299,6 +299,14 @@ class ModulesFields extends GetData
 		);
 	}
 
+	function form_fields()
+	{
+		return array(
+			Field::make('text', 'title', 'Title'),
+			
+		);
+	}
+
 	function cta_fields()
 	{
 		$PostMeta = new PostMeta;
