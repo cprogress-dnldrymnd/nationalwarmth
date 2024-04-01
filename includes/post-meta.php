@@ -907,12 +907,7 @@ Container::make('post_meta', 'Custom CSS / Header Scripts / Body Scripts / Foote
 /* Modules
 /*-----------------------------------------------------------------------------------*/
 $Modules = new Modules();
-Container::make('post_meta', 'Modules')
-	->set_priority('high')
-	->where('post_template', '=', 'templates/modules.php')
-	->or_where('post_type', '=', 'services')
-	->or_where('post_type', '=', 'nwtemplates')
-	->add_fields(array($Modules->modules_post_meta()));
+
 
 
 
