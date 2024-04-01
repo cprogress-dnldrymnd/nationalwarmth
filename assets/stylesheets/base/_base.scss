@@ -242,11 +242,14 @@ select {
             fill: var(--white-color);
         }
     }
-    > span {
-        @include not-last-child {
-            margin-right: 5px;
+    .stars-holder {
+        > span {
+            @include not-last-child {
+                margin-right: 5px;
+            }
         }
     }
+
     .gray-star {
         display: inherit;
         svg {
