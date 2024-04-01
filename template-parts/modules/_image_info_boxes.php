@@ -30,7 +30,7 @@ $disable_module = $module['disable_module'];
                                 if ($icon_type == 'image') {
                                     $DisplayData->image(array(
                                         'image_id' => $item['icon_image'],
-                                    ), 'top-icon text-start mb-5');
+                                    ), 'top-icon text-start mb-5 d-block');
                                 } else {
                                     if ($item['icon_svg']) {
                                         $DisplayData->svg(array(
