@@ -369,6 +369,7 @@ textarea {
         @include responsive(xs-sm) {
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
         }
     }
 
