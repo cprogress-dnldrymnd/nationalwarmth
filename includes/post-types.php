@@ -154,6 +154,16 @@ new newPostType(
 		'supports'            => array('title', 'revisions'),
 	)
 );
+new newPostType(
+	array(
+		'name'          => 'NW Templates',
+		'singular_name' => 'NW Template',
+		'icon'          => 'dashicons-media-document',
+		'rewrite'       => array('slug' => 'template'),
+		'supports'      => array('title', 'revisions', 'editor'),
+		'show_in_rest' => true,
+	)
+);
 
 
 new newPostType(
