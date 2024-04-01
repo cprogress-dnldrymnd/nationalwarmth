@@ -1,4 +1,4 @@
-<section class="image-section lg-padding">
+<section class="image-section lg-padding" id="money-matters">
     <div class="container text-center">
         <div class="heading-box no-margin">
             <h2>
