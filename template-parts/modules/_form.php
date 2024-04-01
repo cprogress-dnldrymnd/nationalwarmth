@@ -1,4 +1,4 @@
-<section class="image-section lg-padding" id="Energy-Matters">
+<section class="image-section lg-padding" id="#Energy-Matters">
     <div class="container text-center">
         <div class="heading-box no-margin">
             <h2>
