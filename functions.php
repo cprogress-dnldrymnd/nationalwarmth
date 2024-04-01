@@ -169,7 +169,7 @@ function enqueue_scripts()
 
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('tissue-paper-nice-select', vendor_dir . 'nice-select/jquery.nice-select.min.js');
+	//wp_enqueue_script('tissue-paper-nice-select', vendor_dir . 'nice-select/jquery.nice-select.min.js');
 	wp_enqueue_script('tissue-paper-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
 	wp_enqueue_script('tissue-paper-swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
 	//wp_enqueue_script('tissue-paper-main-fontawesome-js', vendor_dir . 'fontawesome/all.min.js');
