@@ -32,7 +32,7 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="form-header">
+    <header class="form-header xs-padding">
         <div class="container">
             <a href="<?= get_site_url() ?>">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.941" height="56.015" viewBox="0 0 50.941 56.015">
