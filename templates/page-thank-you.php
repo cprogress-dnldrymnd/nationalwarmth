@@ -41,3 +41,9 @@ $icon = get__post_meta('icon');
 
 </main>
 <?php get_footer('form'); ?>
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery('input[name="your-email"]').val(<?= $_GET['email'] ?>);
+    });
+</script>
