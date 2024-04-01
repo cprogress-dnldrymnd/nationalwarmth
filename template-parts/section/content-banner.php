@@ -49,7 +49,7 @@ if ($page_banner_style == 'style-1') {
 					array(
 						'heading' => $title,
 					),
-					false,
+					'medium-heading',
 					false
 				);
 
