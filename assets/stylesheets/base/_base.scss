@@ -1,7 +1,8 @@
 //-----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-html, body {
+html,
+body {
     overflow-x: hidden;
     margin: 0 !important;
     position: relative;
@@ -69,7 +70,6 @@ a {
                 border-color: var(--secondary-color);
             }
         }
-
     }
     &.button-primary {
         @include button {
@@ -81,7 +81,6 @@ a {
                 color: var(--primary-color) !important;
             }
         }
-
     }
     &.button-secondary {
         @include button {
@@ -93,7 +92,6 @@ a {
                 color: var(--secondary-color) !important;
             }
         }
-
     }
     &.button-big {
         @include button {
@@ -104,7 +102,7 @@ a {
     &.icon-sixty-seconds {
         @include button {
             @include before {
-                content: '';
+                content: "";
                 width: 57px;
                 height: 40px;
                 background-image: url(./assets/images/60secs.png);
@@ -136,7 +134,9 @@ a {
     }
 }
 
-input:not([type="submit"]):not(.qty):not([type="checkbox"]):not([type="radio"]):not(.search), select, textarea {
+input:not([type="submit"]):not(.qty):not([type="checkbox"]):not([type="radio"]):not(.search),
+select,
+textarea {
     border-radius: 5px;
     border: 1px solid var(--primary-color);
     outline: none;
@@ -144,7 +144,7 @@ input:not([type="submit"]):not(.qty):not([type="checkbox"]):not([type="radio"]):
     line-height: 1;
     font-size: 1rem;
     &::placeholder {
-        color: #C6C9CE;
+        color: #c6c9ce;
     }
 }
 select {
@@ -164,7 +164,6 @@ select {
 .page-title {
     display: none;
 }
-
 
 .has-edit {
     position: relative;
@@ -199,18 +198,22 @@ select {
     }
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
     color: var(--gray-color-2);
     font-size: 11px;
     font-weight: bold;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-prev {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-prev {
     left: -50px;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-next {
+.swiper-button-next,
+.swiper-rtl .swiper-button-next {
     right: -50px;
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     width: 30px;
     height: 30px;
     border: 2px solid var(--gray-color-2);
@@ -222,14 +225,13 @@ select {
     @include align-items(center);
     @include justify-content(center);
     .swiper-pagination-bullet {
-        &.swiper-pagination-bullet-active{
+        &.swiper-pagination-bullet-active {
             background: var(--primary-color);
-            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
-            height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
         }
     }
 }
-
 
 .stars {
     svg {
@@ -239,6 +241,8 @@ select {
         path {
             fill: var(--white-color);
         }
+    }
+    > span {
         @include not-last-child {
             margin-right: 5px;
         }
@@ -377,7 +381,6 @@ select {
     }
 }
 
-
 .mySwiper-Testimonial {
     .swiper-slide {
         .swiper-holder {
@@ -385,7 +388,7 @@ select {
             border-radius: 5px;
             background-color: var(--white-color);
             position: relative;
-            .stars  {
+            .stars {
                 margin-right: 1rem;
             }
             .day {
@@ -429,7 +432,7 @@ select {
     .description-box.mt-3 {
         font-size: 14px;
         a {
-            color: #25384A;
+            color: #25384a;
         }
     }
     input {
@@ -438,13 +441,12 @@ select {
             max-width: 100%;
         }
     }
-    [class*='col-'] {
+    [class*="col-"] {
         @include responsive(xxs) {
             flex: 0 0 100%;
         }
     }
 }
-
 
 .accordion-box {
     .accordion {
@@ -524,13 +526,13 @@ select {
     border-radius: 10px;
     padding: 3rem;
 
-    >.inner {
+    > .inner {
         max-width: 737px;
 
         margin-left: auto;
         margin-right: auto;
 
-        >div {
+        > div {
             @include not-last-child {
                 margin-bottom: 1.5rem !important;
             }
