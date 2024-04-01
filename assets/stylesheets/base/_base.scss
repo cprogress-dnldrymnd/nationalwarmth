@@ -576,6 +576,9 @@ textarea {
             margin-bottom: 1.25rem;
         }
     }
+    .wpcf7-submit {
+        width: 100%;
+    }
     .cf7mls-btns {
         text-emphasis: center;
         .cf7mls_back {
@@ -590,6 +593,7 @@ textarea {
             border-color: var(--secondary-color);
             background-color: var(--secondary-color);
             color: var(--white-color);
+            width: 100%;
             @include on-event {
                 background-color: var(--white-color) !important;
                 color: var(--secondary-color) !important;

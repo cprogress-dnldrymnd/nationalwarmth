@@ -10186,6 +10186,8 @@ textarea {
     width: 100%; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label:not(:last-child) {
     margin-bottom: 1.25rem; }
+.fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-submit {
+  width: 100%; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns {
   text-emphasis: center; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_back {
@@ -10220,7 +10222,8 @@ textarea {
     position: relative;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
-    color: var(--white-color); }
+    color: var(--white-color);
+    width: 100%; }
     .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next span {
       position: relative;
       z-index: 1; }
