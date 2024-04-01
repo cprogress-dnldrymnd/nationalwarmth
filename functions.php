@@ -81,6 +81,11 @@ function action_after_setup_theme()
 			'label' => 'Form'
 		),
 
+		array(
+			'id' => 'partners',
+			'label' => 'Partners'
+		),
+
 	);
 
 	$theme_settings = array(

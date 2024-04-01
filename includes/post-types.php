@@ -191,7 +191,6 @@ new newPostType(
 
 
 
-
 new newPostType(
 	array(
 		'name'          => 'Teams',

@@ -414,6 +414,22 @@ class ModulesFields extends GetData
 		);
 	}
 
+
+	
+	function partners_fields()
+	{
+		return array_merge(
+			$this->before_module_fields(),
+			$this->module_fields(
+				array(
+					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
+					Field::make('text', 'heading', 'Heading'),
+					Field::make('html', 'html_partners', __('Logos'))->set_html('This will display partners sliders')
+				)
+			)
+		);
+	}
+
 	function image_info_boxes_fields()
 	{
 		$PostMeta = new PostMeta;
