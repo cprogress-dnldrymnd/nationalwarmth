@@ -119,7 +119,7 @@ add_action('after_setup_theme', 'action_after_setup_theme');
 /*-----------------------------------------------------------------------------------*/
 /* Register Carbofields
 /*-----------------------------------------------------------------------------------*/
-add_action('carbon_fields_register_fields', 'tissue_paper_register_custom_fields');
+add_action('carbon_fields_register_fields', 'tissue_paper_register_custom_fields', 99999);
 function tissue_paper_register_custom_fields()
 {
 	require_once('includes/post-meta.php');
