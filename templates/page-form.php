@@ -31,5 +31,15 @@ $icon = get__post_meta('icon');
             jQuery(this).attr('progress-width', $key * $per_step);
             $key++;
         });
+
+        jQuery('.cf7mls_back').click(function(e) {
+            $current = jQuery('.fieldset-cf7mls.cf7mls_current_fs');
+            $progress_width = $current.attr('progress-width');
+
+            jQuery('.progress-holder').css('--progress-width', $progress_width + '%');
+
+            e.preventDefault();
+
+        });
     });
 </script>
