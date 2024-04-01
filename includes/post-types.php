@@ -210,17 +210,6 @@ new newTaxonomy(array(
 
 
 
-new newPostType(
-	array(
-		'name'          => 'Landing Pages',
-		'singular_name' => 'Landing Page',
-		'icon'          => 'dashicons-media-document',
-		'has_archive'   => false,
-		'supports'      => array('title', 'revisions', 'thumbnail', 'page-attributes'),
-		'rewrite'       => array('slug' => false),
-	)
-);
-
 function na_remove_slug($post_link, $post, $leavename)
 {
 
