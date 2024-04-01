@@ -9994,6 +9994,9 @@ textarea {
     bottom: 0;
     z-index: 2; }
   @media screen and (max-width: 991px) {
+    .grid-box .grid-inner .background-image:before {
+      top: 0 !important; } }
+  @media screen and (max-width: 991px) {
     .grid-box .grid-inner {
       position: absolute;
       left: 0;
@@ -10037,8 +10040,7 @@ textarea {
     width: 100%; }
   @media screen and (max-width: 991px) {
     .grid-box:hover .grid-inner .background-image:before, .grid-box:active .grid-inner .background-image:before, .grid-box:focus .grid-inner .background-image:before {
-      opacity: 0.65 !important;
-      top: 0 !important; } }
+      opacity: 0.65 !important; } }
 
 .image-info-box {
   max-width: 300px;

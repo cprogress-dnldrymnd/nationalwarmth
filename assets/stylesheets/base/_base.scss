@@ -270,8 +270,6 @@ textarea {
         z-index: 2;
     }
 
- 
-
     .link {
         position: absolute;
         left: 0;
@@ -282,6 +280,13 @@ textarea {
     }
 
     .grid-inner {
+        .background-image {
+            @include before {
+                @include responsive(xs-sm) {
+                    top: 0 !important;
+                }
+            }
+        }
         @include responsive(xs-sm) {
             position: absolute;
             left: 0;
@@ -336,7 +341,6 @@ textarea {
                 @include before {
                     @include responsive(xs-sm) {
                         opacity: 0.65 !important;
-                        top: 0 !important;
                     }
                 }
             }
