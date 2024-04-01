@@ -9719,7 +9719,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*-----------------------------------------------------------------------------------*/
 html,
 body {
-  overflow-x: hidden;
   margin: 0 !important;
   position: relative; }
   html.menu-active,
@@ -10277,7 +10276,10 @@ textarea {
 
 .form-progress {
   background-color: #f3f3f3;
-  height: 7px; }
+  height: 7px;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
   .form-progress .progress-holder {
     background-color: var(--secondary-color);
     width: var(--progress-width);

@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 html,
 body {
-    overflow-x: hidden;
     margin: 0 !important;
     position: relative;
     &.menu-active {
@@ -644,6 +643,9 @@ textarea {
 .form-progress {
     background-color: #f3f3f3;
     height: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     .progress-holder {
         background-color: var(--secondary-color);
         width: var(--progress-width);
@@ -651,3 +653,4 @@ textarea {
         height: 100%;
     }
 }
+
