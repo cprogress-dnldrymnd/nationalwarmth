@@ -47,7 +47,7 @@ $disable_module = $module['disable_module'];
                                 $DisplayData->heading(array(
                                     'heading' => $item['heading'],
                                     'tag' => 'h3'
-                                ), 'mb-4 medium-heading');
+                                ), 'mb-4 medium-heading h2');
                                 $DisplayData->description(array(
                                     'description' => $item['description']
                                 ));
