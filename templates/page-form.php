@@ -47,6 +47,7 @@ $icon = get__post_meta('icon');
     });
 
     document.addEventListener('wpcf7mailsent', function(event) {
-        window.location.href = 'https://nationalwarmth.co.uk/find-an-energy-installer-thank-you/';
+        email = jQuery('input[name="your-email"]').val();
+        window.location.href = 'https://nationalwarmth.co.uk/find-an-energy-installer-thank-you/?email=' + email;
     }, false);
 </script>
