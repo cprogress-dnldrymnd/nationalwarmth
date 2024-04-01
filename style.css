@@ -9719,7 +9719,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*-----------------------------------------------------------------------------------*/
 html,
 body {
-  margin: 0 !important;
   position: relative; }
   html.menu-active,
   body.menu-active {
