@@ -836,7 +836,7 @@ Container::make('post_meta', 'Page Banner')
 				Field::make('checkbox', 'hide_page_banner', 'Hide Page Banner'),
 				//Field::make('checkbox', 'display_review', 'Display Review'),
 				Field::make('text', 'alt_title', 'Alt Title'),
-				Field::make('rich_text', 'page_banner_description', 'Page Banner Description'),
+				Field::make('textarea', 'page_banner_description', 'Page Banner Description'),
 				Field::make('select', 'page_banner_style', 'Page Banner Style')
 					->set_options(
 						array(
