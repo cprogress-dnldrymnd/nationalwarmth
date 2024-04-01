@@ -19,7 +19,7 @@ if (!$disable_module) { ?>
                         $DisplayData->heading(
                             array(
                                 'heading' => $heading
-                            )
+                            ), 'no-margin'
                         );
                         $DisplayData->description(
                             array(
