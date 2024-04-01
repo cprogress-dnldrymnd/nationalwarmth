@@ -4,6 +4,12 @@ section.image-info-boxes {
 			@include not-last-child {
 				.column-holder {
 					position: relative;
+
+					h3 {
+						@media (mobile) {
+							font-size: 20px;
+						}
+					}
 					@include before {
 						content: "next";
 						font-family: swiper-icons;
