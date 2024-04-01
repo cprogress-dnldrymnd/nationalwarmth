@@ -10178,7 +10178,9 @@ textarea {
   display: inline-flex;
   flex-direction: column;
   width: 100%;
-  font-size: 17px; }
+  font-size: 17px;
+  text-align: left;
+  font-weight: 500; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label .wpcf7-form-control-wrap {
     margin-top: 14px; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label input,
