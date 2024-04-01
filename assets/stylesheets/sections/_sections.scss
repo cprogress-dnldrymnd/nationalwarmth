@@ -6,9 +6,8 @@ section.image-info-boxes {
 					position: relative;
 
 					h3 {
-						@media (mobile) {
+						@include responsive(xs) {
 							font-size: 20px;
-							
 						}
 					}
 					@include before {
@@ -151,7 +150,6 @@ section.thank-you {
 	}
 	.subscribe-box {
 		margin-bottom: 5rem;
-		
 	}
 
 	.button-bordered {
@@ -162,7 +160,6 @@ section.thank-you {
 		}
 	}
 }
-
 
 section.two-column-image-text {
 	img {
