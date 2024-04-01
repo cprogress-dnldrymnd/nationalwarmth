@@ -9974,7 +9974,7 @@ select {
     background-color: var(--gray-color-2); }
 
 .grid-box {
-  padding: 48% 1rem 8% 1rem;
+  padding: 30% 1rem 8% 1rem;
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
   -ms-transition: 500ms;
