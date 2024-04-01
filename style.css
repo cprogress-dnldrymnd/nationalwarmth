@@ -10177,6 +10177,8 @@ textarea {
 .fieldset-cf7mls-wrapper label {
   display: inline-flex;
   flex-direction: column; }
+  .fieldset-cf7mls-wrapper label input, .fieldset-cf7mls-wrapper label select {
+    width: 100%; }
 
 @font-face {
   font-family: "Outfit";

@@ -562,5 +562,8 @@ textarea {
     label {
         display: inline-flex;
         flex-direction: column;
+        input, select {
+            width: 100%;
+        }
     }
 }
