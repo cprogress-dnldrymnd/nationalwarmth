@@ -606,6 +606,22 @@ textarea {
             }
         }
     }
+    .wpcf7-acceptance {
+        .wpcf7-list-item {
+            margin: 0;
+        }
+        label {
+            flex-direction: row;
+            align-items: flex-start;
+            font-weight: 300;
+            color: #949AA1;
+            input {
+                width: 20px;
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 .form-section {

@@ -10251,6 +10251,17 @@ textarea {
     .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:hover, .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:active, .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next:focus {
       background-color: var(--white-color) !important;
       color: var(--secondary-color) !important; }
+.fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-acceptance .wpcf7-list-item {
+  margin: 0; }
+.fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-acceptance label {
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: 300;
+  color: #949AA1; }
+  .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-acceptance label input {
+    width: 20px;
+    margin-top: 4px;
+    margin-right: 10px; }
 
 .form-section h2 {
   margin-bottom: 1rem; }
