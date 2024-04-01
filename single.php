@@ -18,10 +18,10 @@ get_header(); // This fxn gets the header.php file and renders it
 
 		<?php
 		if (!get__post_meta('hide_page_banner')) {
-			if (get_post_type() != 'landingpages'&& get_post_type() != 'post' && get_post_type() != 'partners') {
+			if (get_post_type() != 'landingpages'&& get_post_type() != 'post' && get_post_type() != 'post') {
 				get_template_part('template-parts/section/content', 'banner');
 			} 
-			if(get_post_type() == 'post' || get_post_type() == 'partners') {
+			if(get_post_type() == 'post') {
 				get_template_part('template-parts/archive/archive', 'banner');
 			}
 		}
