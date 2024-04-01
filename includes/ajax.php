@@ -76,7 +76,7 @@ function archive_ajax()
 								}
 								?>
 								<?php if ($post_type == 'post') { ?>
-									<div class="date">
+									<div class="date d-none">
 										<?= get_the_date('jS F Y') ?>
 									</div>
 								<?php } ?>
