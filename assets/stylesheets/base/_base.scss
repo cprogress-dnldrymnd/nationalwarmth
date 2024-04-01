@@ -577,6 +577,9 @@ textarea {
         @include not-last-child {
             margin-bottom: 1.25rem;
         }
+        .required {
+            color: #E53F1E;
+        }
     }
     .wpcf7-submit {
         width: 100%;

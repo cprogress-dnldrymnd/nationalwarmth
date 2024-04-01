@@ -10188,6 +10188,8 @@ textarea {
     width: 100%; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label:not(:last-child) {
     margin-bottom: 1.25rem; }
+  .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label .required {
+    color: #E53F1E; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-submit {
   width: 100%; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns {
