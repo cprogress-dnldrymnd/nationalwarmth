@@ -11045,20 +11045,54 @@ section.testimonials {
       padding-left: 4rem;
       padding-right: 4rem; } }
 
+section.page-banner .background-image {
+  position: absolute !important; }
+section.page-banner h2 {
+  margin-bottom: 0; }
 section.page-banner.style-1 {
   padding-bottom: 0;
   overflow: visible;
-  margin-bottom: 6.25rem; }
-  section.page-banner.style-1 .container-holder {
-    max-width: 915px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--accent-color);
-    border-radius: 100px 0px;
-    padding: 2rem 3rem;
-    margin-bottom: -6.25rem; }
-    section.page-banner.style-1 .container-holder .heading-box h2 {
-      margin-bottom: 1rem; }
+  padding-top: 10rem; }
+  section.page-banner.style-1 .stars {
+    margin-top: 0 !important; }
+  @media screen and (max-width: 991px) {
+    section.page-banner.style-1 {
+      padding-top: 5rem; } }
+  section.page-banner.style-1 .background-image {
+    bottom: 30%; }
+section.page-banner.style-2 .container-holder {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color); }
+@media screen and (max-width: 991px) {
+  section.page-banner.style-3 .container {
+    padding-top: 40px; } }
+section.page-banner .stars a {
+  color: inherit; }
+@media screen and (max-width: 991px) {
+  section.page-banner .stars a {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 5px 10px 8px 10px;
+    border-radius: 5px; }
+  section.page-banner .stars .stars-holder > span {
+    margin-right: 0; }
+    section.page-banner .stars .stars-holder > span svg {
+      background-color: transparent;
+      padding: 2px; }
+      section.page-banner .stars .stars-holder > span svg.svg-star path {
+        fill: var(--accent-color); }
+    section.page-banner .stars .stars-holder > span.google {
+      margin-right: 5px; } }
+@media screen and (max-width: 991px) {
+  section.page-banner {
+    margin-top: 89.66px; } }
+@media screen and (max-width: 767px) {
+  section.page-banner {
+    margin-top: 87.66px; } }
+@media screen and (max-width: 575px) {
+  section.page-banner {
+    margin-top: 71.88px; } }
 
 section.thank-you .description-box {
   margin-bottom: 3rem;

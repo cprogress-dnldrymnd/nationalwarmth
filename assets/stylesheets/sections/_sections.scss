@@ -46,24 +46,94 @@ section.testimonials {
 }
 
 section.page-banner {
+	.background-image {
+		position: absolute !important;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
 	&.style-1 {
 		padding-bottom: 0;
 		overflow: visible;
-		margin-bottom: 6.25rem;
+		padding-top: 10rem;
+
+		.stars {
+			margin-top: 0 !important;
+		}
+
+		@include responsive(xs-sm) {
+			padding-top: 5rem;
+		}
+
+		.background-image {
+			bottom: 30%;
+		}
+	}
+
+	&.style-2 {
 		.container-holder {
-			max-width: 915px;
+			max-width: 900px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: var(--accent-color);
-			border-radius: 100px 0px;
-			padding: 2rem 3rem;
-			margin-bottom: -6.25rem;
-			.heading-box {
-				h2 {
-					margin-bottom: 1rem;
+			color: var(--white-color);
+		}
+	}
+
+	&.style-3 {
+		.container {
+			@include responsive(xs-sm) {
+				padding-top: 40px;
+			}
+		}
+	}
+
+	.stars a {
+		color: inherit;
+	}
+
+	@include responsive(xs-sm) {
+		.stars {
+			a {
+				border: 2px solid rgba($color: #fff, $alpha: 0.25);
+				padding: 5px 10px 8px 10px;
+				border-radius: 5px;
+			}
+
+			.stars-holder {
+				> span {
+					margin-right: 0;
+
+					svg {
+						background-color: transparent;
+						padding: 2px;
+
+						&.svg-star {
+							path {
+								fill: var(--accent-color);
+							}
+						}
+					}
+
+					&.google {
+						margin-right: 5px;
+					}
 				}
 			}
 		}
+	}
+
+	@include responsive(xs-sm) {
+		margin-top: 89.66px;
+	}
+
+	@include responsive(xs) {
+		margin-top: 87.66px;
+	}
+
+	@include responsive(mobile) {
+		margin-top: 71.88px;
 	}
 }
 
