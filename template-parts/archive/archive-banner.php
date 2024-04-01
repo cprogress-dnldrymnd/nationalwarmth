@@ -18,7 +18,7 @@ if (is_single()) {
 	}
 }
 ?>
-<section class="project-title-section pb-0 archive-banner md-padding" data-aos="fade-left">
+<section class="project-title-section archive-banner md-padding" data-aos="fade-left">
 	<div class="container">
 		<h1 class="mb-4"><?= $title ?></h1>
 		<?php
