@@ -183,7 +183,7 @@ new newPostType(
 		'name'          => 'Partners',
 		'singular_name' => 'Partner',
 		'icon'          => 'dashicons-admin-users',
-		'rewrite'       => array('slug' => 'services'),
+		'rewrite'       => array('slug' => 'partners'),
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
 		'show_in_rest'  => true,
 	)
