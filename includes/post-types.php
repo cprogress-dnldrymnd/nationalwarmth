@@ -156,8 +156,8 @@ new newPostType(
 );
 new newPostType(
 	array(
-		'name'          => 'Templates',
-		'singular_name' => 'Template',
+		'name'          => 'NW Templates',
+		'singular_name' => 'NW Template',
 		'icon'          => 'dashicons-media-document',
 		'rewrite'       => array('slug' => 'template'),
 		'supports'      => array('title', 'revisions'),
