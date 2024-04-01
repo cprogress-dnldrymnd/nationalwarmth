@@ -608,6 +608,12 @@ textarea {
 }
 
 .form-section {
+    h2 {
+        margin-bottom: 1rem;
+    }
+    .fields-holder {
+        margin-top: 100px;
+    }
     .fields-holder, .cf7mls-btns {
         max-width: 385px;
         margin-left: auto;

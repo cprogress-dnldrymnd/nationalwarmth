@@ -10251,6 +10251,10 @@ textarea {
       background-color: var(--white-color) !important;
       color: var(--secondary-color) !important; }
 
+.form-section h2 {
+  margin-bottom: 1rem; }
+.form-section .fields-holder {
+  margin-top: 100px; }
 .form-section .fields-holder, .form-section .cf7mls-btns {
   max-width: 385px;
   margin-left: auto;
