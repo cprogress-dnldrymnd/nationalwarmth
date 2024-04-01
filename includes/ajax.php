@@ -69,7 +69,10 @@ function archive_ajax()
 									'size' => 'large',
 								));
 								} else {
-									echo '<div class="image-box"></div>';
+									$DisplayData->image(array(
+										'image_id' => get__theme_option('default_page_banner'),
+										'size' => 'large',
+									));
 								}
 								?>
 								<?php if ($post_type == 'post') { ?>
