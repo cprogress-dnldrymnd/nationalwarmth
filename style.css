@@ -10286,6 +10286,9 @@ textarea {
     transition: 500ms;
     height: 100%; }
 
+.admin-bar .form-progress {
+  top: 32px; }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");
