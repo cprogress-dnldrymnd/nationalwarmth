@@ -10281,7 +10281,8 @@ textarea {
   .form-progress .progress-holder {
     background-color: var(--secondary-color);
     width: var(--progress-width);
-    transition: 500ms; }
+    transition: 500ms;
+    height: 100%; }
 
 @font-face {
   font-family: "Outfit";
