@@ -45,4 +45,8 @@ $icon = get__post_meta('icon');
 
         });
     });
+
+    document.addEventListener('wpcf7mailsent', function(event) {
+        window.location.href = 'https://nationalwarmth.co.uk/find-an-energy-installer-thank-you/';
+    }, false);
 </script>
