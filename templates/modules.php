@@ -26,35 +26,6 @@ $hide_page_banner = carbon_get_the_post_meta('hide_page_banner');
 		?>
 	<?php } ?>
 
-	<section class="cta background-accent sm-padding">
-		<div class="container text-center text-lg-start">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-auto mb-4 mb-lg-0">
-					<div class="column-holder">
-						<div class="heading-box no-margin medium-heading">
-							<h2>
-								Let's future-proof your home
-							</h2>
-						</div>
-						<div class="description-box">
-							<p>
-								Use our handy online tool to get an instant quote
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-auto">
-					<div class="column-holder">
-						<div class="button-box button-bordered button-big icon-sixty-seconds">
-							<a href="">
-								Get an instant quote
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="logo-slider md-padding">
 		<div class="container large-container">
 			<div class="heading-box text-center mb-5">
