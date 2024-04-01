@@ -295,7 +295,7 @@ class ModulesFields extends GetData
 		return array(
 			Field::make('text', 'title', 'Title'),
 			Field::make('select', 'template', 'Template')
-				->set_options($this->get_posts('templates', 'Select Template')),
+				->set_options($this->get_posts('nwtemplates', 'Select Template')),
 		);
 	}
 
@@ -779,7 +779,7 @@ class ThemeOptionsMeta extends PostMeta
 						Field::make('text', 'title', 'Title'),
 						Field::make('text', 'class', 'Template Class'),
 						Field::make('select', 'template', 'Template')
-							->set_options($this->get_posts('templates', 'Select Template')),
+							->set_options($this->get_posts('nwtemplates', 'Select Template')),
 					)
 				)
 				->set_header_template('<%- title  %>')
