@@ -11,7 +11,7 @@ $disable_module = $module['disable_module'];
 $two_columns = $module['two_columns'];
 
 if (!$disable_module) { ?>
-	<section <?= $GetData->get_attributes('wysiwyg text-section background-gray md-padding', $module_id, $template_class) ?>>
+	<section <?= $GetData->get_attributes('wysiwyg text-section md-padding', $module_id, $template_class) ?>>
 		<?php if ($template_class) { ?>
 			<?= $Helpers->get_edit_url('post.php?post=' . $postid . '&action=edit', 'Edit Template') ?>
 		<?php } ?>
