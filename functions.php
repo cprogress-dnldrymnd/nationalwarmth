@@ -147,20 +147,6 @@ function enqueue_scripts()  {
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
 
 
-function action_wp_head() {
-	$page_header_scripts = carbon_get_the_post_meta('page_header_scripts');
-	$page_custom_css = carbon_get_the_post_meta('page_custom_css');
-
-	if($page_header_scripts) {
-		echo $page_header_scripts;
-	}
-	if($page_custom_css) {
-		echo '<style id="page-custom-css">'.$page_custom_css.'</style>';
-	}
-
-}
-add_action( 'wp_head', 'action_wp_head' ); 
-
 function action_wp_footer() {
 	$page_footer_scripts = carbon_get_the_post_meta('page_footer_scripts');
 
