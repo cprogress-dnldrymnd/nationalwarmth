@@ -3,7 +3,7 @@
 /* Template Name: Form
 /*-----------------------------------------------------------------------------------*/
 ?>
-<?php get_header(); ?>
+<?php get_header('form'); ?>
 <?php
 $icon = get__post_meta('icon');
 ?>
@@ -16,4 +16,4 @@ $icon = get__post_meta('icon');
         </div>
     </section>
 </main>
-<?php get_footer(); ?>
+<?php get_footer('form'); ?>
