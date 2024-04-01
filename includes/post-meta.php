@@ -871,18 +871,6 @@ Container::make('post_meta', 'Page Icon')
 	 )
  );
 */
-Container::make('post_meta', 'Page Option')
-	->where('post_type', '=', 'page')
-	->or_where('post_type', '=', 'services')
-	->set_context('side')
-	->add_fields(
-		array(
-			Field::make('checkbox', 'hide_sticky_cta', 'Hide Sticky CTA'),
-			Field::make('image', 'page_icon', 'Page Icon')
-		)
-	);
-
-
 
 /*-----------------------------------------------------------------------------------*/
 /* Testimonial
