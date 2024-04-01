@@ -32,7 +32,7 @@ $icon = get__post_meta('icon');
             $key++;
         });
 
-        jQuery('.cf7mls_back').click(function(e) {
+        jQuery('.cf7mls_back, .cf7mls_next').click(function(e) {
             $current = jQuery('.fieldset-cf7mls.cf7mls_current_fs');
             $progress_width = $current.attr('progress-width');
 
