@@ -8,7 +8,9 @@
 $icon = get__post_meta('icon');
 ?>
 <main id="main" class="page-components">
-
+    <div class="form-progress">
+        <div class="progress-holder" style="--progress-width: 100%"></div>
+    </div>
     <section class="image-section lg-padding thank-you">
         <div class="container text-center">
             <img src="<?= wp_get_attachment_image_url($icon, 'medium') ?>" />
@@ -34,6 +36,6 @@ $icon = get__post_meta('icon');
             </div>
         </div>
     </section>
-   
+
 </main>
 <?php get_footer(); ?>
