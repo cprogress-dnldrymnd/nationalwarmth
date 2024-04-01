@@ -40,7 +40,7 @@ $icon = get__post_meta('icon');
                 jQuery('.progress-holder').css('--progress-width', $progress_width + '%');
 
                 e.preventDefault();
-            }, 300);
+            }, 500);
 
 
         });
