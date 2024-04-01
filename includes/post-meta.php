@@ -663,8 +663,8 @@ class ModulesFields extends GetData
 					Field::make('text', 'heading', 'Heading'),
 					Field::make('textarea', 'description', 'Description'),
 					Field::make('checkbox', 'two_columns', 'Two Columns'),
-					Field::make('textarea', 'wysiwyg', 'Wsiwyg'),
-					Field::make('textarea', 'wysiwyg2', 'Wsiwyg 2')
+					Field::make('rich_text', 'wysiwyg', 'Wsiwyg'),
+					Field::make('rich_text', 'wysiwyg2', 'Wsiwyg 2')
 						->set_conditional_logic(
 							array(
 								array(
