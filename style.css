@@ -9966,7 +9966,7 @@ select {
   padding: 5px; }
   .stars svg path {
     fill: var(--white-color); }
-.stars > span:not(:last-child) {
+.stars .stars-holder > span:not(:last-child) {
   margin-right: 5px; }
 .stars .gray-star {
   display: inherit; }
