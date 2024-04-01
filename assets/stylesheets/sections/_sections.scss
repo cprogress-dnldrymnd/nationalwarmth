@@ -74,5 +74,14 @@ section.thank-you {
 	}
 	.subscribe-box {
 		margin-bottom: 3rem;
+		
+	}
+
+	.button-bordered {
+		a {
+			width: 100%;
+			max-width: 385px;
+			color: var(--secondary-color);
+		}
 	}
 }

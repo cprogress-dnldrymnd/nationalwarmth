@@ -32,7 +32,7 @@ $icon = get__post_meta('icon');
             <div class="button-box   button-bordered">
                 <a href="<?= get_site_url() ?>">
                     <span class="text">
-                        Return to home
+                        Back to home
                     </span>
                 </a>
             </div>

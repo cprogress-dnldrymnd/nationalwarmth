@@ -11065,5 +11065,9 @@ section.thank-you .description-box {
   color: #949aa1; }
 section.thank-you .subscribe-box {
   margin-bottom: 3rem; }
+section.thank-you .button-bordered a {
+  width: 100%;
+  max-width: 385px;
+  color: var(--secondary-color); }
 
 /*# sourceMappingURL=style.css.map */
