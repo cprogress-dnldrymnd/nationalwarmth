@@ -28,8 +28,8 @@ $icon = get__post_meta('icon');
         $per_step = 100 / $length;
         console.log($per_step);
         jQuery('.fieldset-cf7mls').each(function(index, element) {
-            // element == this
-
+            jQuery(this).attr('progress-width', $key * $per_step);
+            $key++;
         });
     });
 </script>
