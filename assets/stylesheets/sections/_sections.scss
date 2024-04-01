@@ -1,15 +1,16 @@
 section.image-info-boxes {
 	.row {
 		[class*="col-"] {
+			h3 {
+				@include responsive(xs) {
+					font-size: 20px;
+				}
+			}
 			@include not-last-child {
 				.column-holder {
 					position: relative;
 
-					h3 {
-						@include responsive(xs) {
-							font-size: 20px;
-						}
-					}
+				
 					@include before {
 						content: "next";
 						font-family: swiper-icons;

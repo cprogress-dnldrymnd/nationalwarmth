@@ -11011,11 +11011,11 @@ section.footer-navigation {
 /*-----------------------------------------------------------------------------------*/
 /* Sections
 /*-----------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  section.image-info-boxes .row [class*="col-"] h3 {
+    font-size: 20px; } }
 section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder {
   position: relative; }
-  @media screen and (max-width: 767px) {
-    section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder h3 {
-      font-size: 20px; } }
   section.image-info-boxes .row [class*="col-"]:not(:last-child) .column-holder:before {
     content: "next";
     font-family: swiper-icons;
