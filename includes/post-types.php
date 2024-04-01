@@ -156,11 +156,11 @@ new newPostType(
 );
 new newPostType(
 	array(
-		'name'          => 'Templatess',
-		'singular_name' => 'Templatess',
+		'name'          => 'Templates',
+		'singular_name' => 'Template',
 		'icon'          => 'dashicons-media-document',
 		'rewrite'       => array('slug' => 'template'),
-		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
+		'supports'      => array('title', 'revisions'),
 		'show_in_rest' => true,
 	)
 );
