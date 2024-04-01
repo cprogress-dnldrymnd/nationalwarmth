@@ -857,6 +857,7 @@ Container::make('post_meta', 'Thank you page')
 	->where('post_template', '=', 'templates/page-thank-you.php')
 	->add_fields(array(
 		Field::make('image', 'icon', 'Icon'),
+		Field::make('image', 'image', 'Image'),
 		Field::make('text', 'alt_title', 'Alt Title'),
 	));
 
