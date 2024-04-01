@@ -10010,9 +10010,6 @@ textarea {
         display: inline;
         line-height: 1.3;
         font-size: 20px; } }
-  @media screen and (max-width: 575px) {
-    .grid-box .grid-inner h2 {
-      font-size: 15px; } }
   @media screen and (min-width: 992px) {
     .grid-box .grid-inner:before, .grid-box .grid-inner:after {
       content: "";

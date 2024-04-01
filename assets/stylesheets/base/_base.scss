@@ -307,6 +307,7 @@ textarea {
         h2 {
             @include responsive(mobile) {
                 font-size: 15px;
+
             }
         }
 
