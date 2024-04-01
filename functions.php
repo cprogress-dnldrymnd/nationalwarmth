@@ -88,6 +88,8 @@ function action_after_setup_theme() {
 			'label' => 'Sticky CTA'
 		)
 	);
+	require_once( 'plugins/carbon-fields/vendor/autoload.php' );
+	\Carbon_Fields\Carbon_Fields::boot();
 
 }
 add_action( 'after_setup_theme', 'action_after_setup_theme' );
