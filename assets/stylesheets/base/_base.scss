@@ -270,6 +270,8 @@ textarea {
         z-index: 2;
     }
 
+ 
+
     .link {
         position: absolute;
         left: 0;
@@ -292,7 +294,8 @@ textarea {
                 margin-bottom: 0;
                 border-bottom: 2px solid var(--accent-color);
                 display: inline;
-                line-height: 2;
+                line-height: 1.3;
+                font-size: 20px;
             }
         }
 
@@ -333,6 +336,7 @@ textarea {
                 @include before {
                     @include responsive(xs-sm) {
                         opacity: 0.65 !important;
+                        top: 0 !important;
                     }
                 }
             }
