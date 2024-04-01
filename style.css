@@ -10180,7 +10180,7 @@ textarea {
     .image-info-box .top-icon {
       margin-left: auto;
       margin-right: auto;
-      text-align: center; } }
+      text-align: center !important; } }
   .image-info-box .main-image {
     position: relative;
     padding: 20%;
