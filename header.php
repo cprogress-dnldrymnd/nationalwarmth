@@ -40,6 +40,6 @@
 	<?php
 	do_action('open_header');
 	get_template_part('template-parts/header/header', 'navigation');
-	//get_template_part('template-parts/header/header', 'bottom');
+	get_template_part('template-parts/header/header', 'bottom');
 	do_action('close_header');
 	?>
