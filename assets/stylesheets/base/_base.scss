@@ -564,9 +564,16 @@ textarea {
         display: inline-flex;
         flex-direction: column;
         width: 100%;
+        font-size: 17px;
+        .wpcf7-form-control-wrap {
+            margin-top: 14px;
+        }
         input,
         select {
             width: 100%;
+        }
+        @include not-last-child {
+            margin-bottom: 1.25rem;
         }
     }
     .cf7mls-btns {

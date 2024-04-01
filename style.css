@@ -10177,10 +10177,15 @@ textarea {
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label {
   display: inline-flex;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  font-size: 17px; }
+  .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label .wpcf7-form-control-wrap {
+    margin-top: 14px; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label input,
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label select {
     width: 100%; }
+  .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label:not(:last-child) {
+    margin-bottom: 1.25rem; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns {
   text-emphasis: center; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_back {
