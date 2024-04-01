@@ -6,31 +6,33 @@ section.image-info-boxes {
 					font-size: 20px;
 				}
 			}
+		
 			@include not-last-child {
 				.column-holder {
 					position: relative;
 
-				
-					@include before {
-						content: "next";
-						font-family: swiper-icons;
-						text-transform: none !important;
-						letter-spacing: 0;
-						text-transform: none;
-						font-variant: initial;
-						line-height: 1;
-						color: #dedede;
-						position: absolute;
-						font-size: 20px;
-						@include responsive(md-lg) {
-							right: 0;
-							top: 50%;
-							@include transform(translateY(-50%));
-						}
-						@include responsive(xs-sm) {
-							bottom: 0;
-							left: 50%;
-							@include transform(translateX(-50%) rotate(90deg));
+					@include responsive(md-lg) {
+						@include before {
+							content: "next";
+							font-family: swiper-icons;
+							text-transform: none !important;
+							letter-spacing: 0;
+							text-transform: none;
+							font-variant: initial;
+							line-height: 1;
+							color: #dedede;
+							position: absolute;
+							font-size: 20px;
+							@include responsive(md-lg) {
+								right: 0;
+								top: 50%;
+								@include transform(translateY(-50%));
+							}
+							@include responsive(xs-sm) {
+								bottom: 0;
+								left: 50%;
+								@include transform(translateX(-50%) rotate(90deg));
+							}
 						}
 					}
 					@include responsive(xs-sm) {
@@ -167,7 +169,6 @@ section.two-column-image-text {
 		border-radius: 20px;
 	}
 }
-
 
 section.archive-banner {
 	background-color: transparent;

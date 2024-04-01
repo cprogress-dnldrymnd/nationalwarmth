@@ -307,7 +307,6 @@ textarea {
         h2 {
             @include responsive(mobile) {
                 font-size: 15px;
-
             }
         }
 
@@ -367,13 +366,19 @@ textarea {
         @include responsive(md-lg) {
             max-width: 35px;
         }
+        @include responsive(xs-sm) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .main-image {
         position: relative;
         padding: 20%;
         margin-bottom: 1.875rem;
-
+        @include responsive(xs-sm) {
+            padding: 30%;
+        }
         img,
         svg {
             position: absolute;
