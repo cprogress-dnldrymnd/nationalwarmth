@@ -39,39 +39,15 @@ function action_widgets_init() {
 
 
 	register_sidebar( array(
-		'name' => 'Footer Column 5',
-		'id' => 'footer_column_5',
+		'name' => 'Footer Bottom',
+		'id' => 'footer_bottom',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		'before_title' => '<h5 class="widget-title">',
 		'after_title' => '</h5>',
 	) );
 
-	register_sidebar( array(
-		'name' => 'Footer Column 6',
-		'id' => 'footer_column_6',
-		'before_widget' => '<div>',
-		'after_widget' => '</div>',
-		'before_title' => '<h5 class="widget-title">',
-		'after_title' => '</h5>',
-	) );
 
-	register_sidebar( array(
-		'name' => 'Footer Column 7',
-		'id' => 'footer_column_7',
-		'before_widget' => '<div>',
-		'after_widget' => '</div>',
-		'before_title' => '<h5 class="widget-title">',
-		'after_title' => '</h5>',
-	) );
-	register_sidebar( array(
-		'name' => 'Woocommerce Listing Sidebar',
-		'id' => 'woocommerce_listing_sidebar',
-		'before_widget' => '<div>',
-		'after_widget' => '</div>',
-		'before_title' => '<h5 class="widget-title">',
-		'after_title' => '</h5>',
-	) );
 }
 add_action( 'widgets_init', 'action_widgets_init' );
 

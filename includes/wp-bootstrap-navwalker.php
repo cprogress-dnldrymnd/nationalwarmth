@@ -69,7 +69,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
     $item_output = $args->before;
     $item_output .= '<a' . $attributes . '>';
     $item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID) . $args->link_after;
-    $item_output .= ( $args->walker->has_children ) ? '<i class="fa-solid fa-chevron-down"></i></a>' : '</a>';
+    $item_output .= ( $args->walker->has_children ) ? '<svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a>' : '</a>';
     $item_output .= $args->after;
 
     $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);

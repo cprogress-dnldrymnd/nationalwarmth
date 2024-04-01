@@ -12,6 +12,7 @@ class newPostType
 		$this->singular_name = $param['singular_name'];
 		$this->icon = $param['icon'];
 		$this->supports = $param['supports'];
+		$this->show_in_rest = isset($param['show_in_rest']) ? $param['show_in_rest'] : false;
 		$this->exclude_from_search = isset($param['exclude_from_search']) ? $param['exclude_from_search'] : false;;
 		$this->publicly_queryable = isset($param['publicly_queryable']) ? $param['publicly_queryable'] : true;
 		$this->show_in_admin_bar = isset($param['show_in_admin_bar']) ? $param['show_in_admin_bar'] : true;
@@ -30,7 +31,7 @@ class newPostType
 		register_post_type(
 			strtolower($this->name),
 			array(
-				'labels' => array(
+				'labels'              => array(
 					'name'               => _x($this->name, 'post type general name'),
 					'singular_name'      => _x($this->singular_name, 'post type singular name'),
 					'menu_name'          => _x($this->name, 'admin menu'),
@@ -46,15 +47,16 @@ class newPostType
 					'not_found'          => __('No ' . strtolower($this->name) . ' found.'),
 					'not_found_in_trash' => __('No ' . strtolower($this->name) . ' found in Trash.')
 				),
-				'supports'              => $this->supports,
-				'public'             => true,
-				'has_archive'        => $this->has_archive,
-				'hierarchical'       => $this->hierarchical,
-				'rewrite'            => $this->rewrite,
-				'menu_icon'          => $this->icon,
-				'capability_type'       => 'page',
-				'exclude_from_search'   => $this->exclude_from_search,
-				'publicly_queryable'    => $this->publicly_queryable,
+				'show_in_rest'        => $this->show_in_rest,
+				'supports'            => $this->supports,
+				'public'              => true,
+				'has_archive'         => $this->has_archive,
+				'hierarchical'        => $this->hierarchical,
+				'rewrite'             => $this->rewrite,
+				'menu_icon'           => $this->icon,
+				'capability_type'     => 'page',
+				'exclude_from_search' => $this->exclude_from_search,
+				'publicly_queryable'  => $this->publicly_queryable,
 				'show_in_admin_bar'   => $this->show_in_admin_bar,
 			)
 		);
@@ -139,36 +141,28 @@ class newTaxonomy
 	}
 }
 
-new newPostType(array(
-	'name' => 'Testimonials',
-	'singular_name' => 'Testimonial',
-	'icon' => 'dashicons-testimonial',
-	'exclude_from_search' => true,
-	'publicly_queryable' => false,
-	'show_in_admin_bar' => false,
-	'has_archive' => false,
-	'rewrite' => array('slug' => 'testimonial'),
-	'supports' => array('title', 'revisions'),
-));
-new newPostType(array(
-	'name' => 'Templates',
-	'singular_name' => 'Template',
-	'icon' => 'dashicons-media-document',
-	'rewrite' => array('slug' => 'template'),
-	'supports' => array('title', 'revisions'),
-));
-
-new newPostType(array(
-	'name' => 'Galleries',
-	'singular_name' => 'Gallery',
-	'icon' => 'dashicons-format-gallery',
-	'exclude_from_search' => true,
-	'publicly_queryable' => false,
-	'show_in_admin_bar' => false,
-	'has_archive' => false,
-	'rewrite' => array('slug' => 'gallery'),
-	'supports' => array('title', 'revisions'),
-));
+new newPostType(
+	array(
+		'name'                => 'Testimonials',
+		'singular_name'       => 'Testimonial',
+		'icon'                => 'dashicons-testimonial',
+		'exclude_from_search' => true,
+		'publicly_queryable'  => false,
+		'show_in_admin_bar'   => false,
+		'has_archive'         => false,
+		'rewrite'             => array('slug' => 'testimonial'),
+		'supports'            => array('title', 'revisions'),
+	)
+);
+new newPostType(
+	array(
+		'name'          => 'Templates',
+		'singular_name' => 'Template',
+		'icon'          => 'dashicons-media-document',
+		'rewrite'       => array('slug' => 'template'),
+		'supports'      => array('title', 'revisions'),
+	)
+);
 
 
 new newPostType(
@@ -182,6 +176,22 @@ new newPostType(
 	)
 );
 
+
+
+
+new newPostType(
+	array(
+		'name'          => 'Teams',
+		'singular_name' => 'Team',
+		'icon'          => 'dashicons-groups',
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
+		'show_in_rest'  => false,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => false,
+		'show_in_admin_bar'   => false,
+		'has_archive'         => false,
+	)
+);
 
 /*
 
@@ -199,24 +209,61 @@ new newTaxonomy(array(
 
 
 
-// Add the custom columns to the accordions post type:
-add_filter('manage_accordions_posts_columns', 'set_custom_edit_accordions_columns');
-function set_custom_edit_accordions_columns($columns)
+new newPostType(
+	array(
+		'name'          => 'Landing Pages',
+		'singular_name' => 'Landing Page',
+		'icon'          => 'dashicons-media-document',
+		'has_archive'   => false,
+		'supports'      => array('title', 'revisions', 'thumbnail', 'page-attributes'),
+		'rewrite'       => array('slug' => false),
+	)
+);
+
+function na_remove_slug($post_link, $post, $leavename)
 {
-	unset($columns['author']);
+
+	if ('landingpages' != $post->post_type || 'publish' != $post->post_status) {
+		return $post_link;
+	}
+
+	$post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
+
+	return $post_link;
+}
+add_filter('post_type_link', 'na_remove_slug', 10, 3);
+
+function na_parse_request($query)
+{
+
+	if (!$query->is_main_query() || 2 != count($query->query) || !isset($query->query['page'])) {
+		return;
+	}
+
+	if (!empty($query->query['name'])) {
+		$query->set('post_type', array('post', 'landingpages', 'page'));
+	}
+}
+add_action('pre_get_posts', 'na_parse_request');
+
+
+// Add the custom columns to the templates post type:
+add_filter('manage_templates_posts_columns', 'set_custom_edit_templates_columns');
+function set_custom_edit_templates_columns($columns)
+{
 	$columns['shortcode'] = __('Shortcode', 'your_text_domain');
 
 	return $columns;
 }
 
-// Add the data to the custom columns for the accordions post type:
-add_action('manage_accordions_posts_custom_column', 'custom_accordions_column', 10, 2);
-function custom_accordions_column($column, $post_id)
+// Add the data to the custom columns for the templates post type:
+add_action('manage_templates_posts_custom_column', 'custom_templates_column', 10, 2);
+function custom_templates_column($column, $post_id)
 {
 	switch ($column) {
 
 		case 'shortcode':
-			echo "<code>[accordion id='" . get_the_ID() . "' title='" . get_the_title() . "']</code>";
+			echo '<input type="text" value="[template id='.$post_id.']" readonly/>';
 			break;
 	}
 }
