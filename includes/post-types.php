@@ -166,16 +166,6 @@ new newPostType(
 );
 
 
-new newPostType(
-	array(
-		'name'          => 'Services',
-		'singular_name' => 'Service',
-		'icon'          => 'dashicons-camera-alt',
-		'rewrite'       => array('slug' => 'services'),
-		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
-		'show_in_rest'  => true,
-	)
-);
 
 
 
