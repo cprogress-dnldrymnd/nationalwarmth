@@ -9867,15 +9867,6 @@ textarea {
   textarea::placeholder {
     color: #c6c9ce; }
 
-select {
-  border: none;
-  border-bottom: 2px solid var(--primary-color);
-  padding: 13px;
-  letter-spacing: 0.9px;
-  color: var(--gray-color-2);
-  outline: none;
-  font-family: var(--secondary-font); }
-
 @media screen and (max-width: 600px) {
   #wpadminbar {
     position: fixed; } }
@@ -10182,6 +10173,10 @@ select {
   @media screen and (max-width: 991px) {
     .title-container {
       padding: 2rem; } }
+
+.fieldset-cf7mls-wrapper label {
+  display: inline-flex;
+  flex-direction: column; }
 
 @font-face {
   font-family: "Outfit";

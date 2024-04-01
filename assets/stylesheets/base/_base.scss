@@ -147,15 +147,7 @@ textarea {
         color: #c6c9ce;
     }
 }
-select {
-    border: none;
-    border-bottom: 2px solid var(--primary-color);
-    padding: 13px;
-    letter-spacing: 0.9px;
-    color: var(--gray-color-2);
-    outline: none;
-    font-family: var(--secondary-font);
-}
+
 #wpadminbar {
     @media screen and (max-width: 600px) {
         position: fixed;
@@ -563,5 +555,12 @@ select {
 
     @include responsive(xs-sm) {
         padding: 2rem;
+    }
+}
+
+.fieldset-cf7mls-wrapper {
+    label {
+        display: inline-flex;
+        flex-direction: column;
     }
 }
