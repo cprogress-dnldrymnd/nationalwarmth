@@ -578,7 +578,7 @@ textarea {
             margin-bottom: 1.25rem;
         }
         .required {
-            color: #E53F1E;
+            color: #e53f1e;
         }
     }
     .wpcf7-submit {
@@ -593,7 +593,7 @@ textarea {
             background-color: transparent;
             color: #c6c9ce;
             font-size: 17px;
-            margin-top: 0
+            margin-top: 0;
         }
         .cf7mls_next {
             @include button-style;
@@ -616,7 +616,7 @@ textarea {
             flex-direction: row;
             align-items: flex-start;
             font-weight: 300;
-            color: #949AA1;
+            color: #949aa1;
             input {
                 width: 20px;
                 margin-top: 4px;
@@ -633,9 +633,20 @@ textarea {
     .fields-holder {
         margin-top: 100px;
     }
-    .fields-holder, .cf7mls-btns {
+    .fields-holder,
+    .cf7mls-btns {
         max-width: 385px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.form-progress {
+    background-color: #f3f3f3;
+    height: 7px;
+    .form-progress {
+        background-color: var(--secondary-color);
+        width: var(--progress-width);
+        transition: 500ms;
     }
 }

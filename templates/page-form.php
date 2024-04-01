@@ -9,7 +9,7 @@ $icon = get__post_meta('icon');
 ?>
 <main id="main" class="page-components">
     <div class="form-progress">
-        <div class="progress"></div>
+        <div class="progress-holder" style="--progress-width: 33.3333333%"></div>
     </div>
     <section class="form-section md-padding">
         <div class="container">

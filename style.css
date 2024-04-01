@@ -10189,7 +10189,7 @@ textarea {
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label:not(:last-child) {
     margin-bottom: 1.25rem; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label .required {
-    color: #E53F1E; }
+    color: #e53f1e; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-submit {
   width: 100%;
   margin-bottom: 0 !important; }
@@ -10259,7 +10259,7 @@ textarea {
   flex-direction: row;
   align-items: flex-start;
   font-weight: 300;
-  color: #949AA1; }
+  color: #949aa1; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-acceptance label input {
     width: 20px;
     margin-top: 4px;
@@ -10269,10 +10269,19 @@ textarea {
   margin-bottom: 1rem; }
 .form-section .fields-holder {
   margin-top: 100px; }
-.form-section .fields-holder, .form-section .cf7mls-btns {
+.form-section .fields-holder,
+.form-section .cf7mls-btns {
   max-width: 385px;
   margin-left: auto;
   margin-right: auto; }
+
+.form-progress {
+  background-color: #f3f3f3;
+  height: 7px; }
+  .form-progress .form-progress {
+    background-color: var(--secondary-color);
+    width: var(--progress-width);
+    transition: 500ms; }
 
 @font-face {
   font-family: "Outfit";
