@@ -19,7 +19,7 @@ if (!$disable_module) { ?>
                     $image = get__post_meta_by_id($service['id'], 'grid_image') ? get__post_meta_by_id($service['id'], 'grid_image') : get_post_thumbnail_id($service['id']);
                     ?>
                     <div class="col-4">
-                        <div class="column-holder h-100 background-primary" >
+                        <div class="column-holder h-100 background-primary">
                             <div class="grid-box h-100 position-relative text-center">
                                 <div class="grid-inner h-100 d-flex flex-column justify-content-center justify-content-lg-end">
                                     <a href="<?= get_permalink($service['id']) ?>" class="link"></a>
@@ -38,17 +38,10 @@ if (!$disable_module) { ?>
                                         'mb-lg-4 text-white small-heading'
                                     );
                                     ?>
-                                    <div class="button-group-box justify-content-center">
-                                        <div class="button-box button-primary medium-text d-none d-lg-block">
-                                            <a href="#form">
-                                                <span class="text">Get free grant</span>
-                                            </a>
-                                        </div>
-                                        <div class="button-box button-accent medium-text d-none d-lg-block">
-                                            <a href="<?= get_permalink($service['id']) ?>">
-                                                <span class="text">Learn More</span>
-                                            </a>
-                                        </div>
+                                    <div class="button-box button-accent medium-text d-none d-lg-block text-center">
+                                        <a href="<?= get_permalink($service['id']) ?>">
+                                            <span class="text">Learn More</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
