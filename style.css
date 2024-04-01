@@ -10191,7 +10191,8 @@ textarea {
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper label .required {
     color: #E53F1E; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .wpcf7-submit {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
 .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns {
   text-emphasis: center; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_back {
@@ -10199,7 +10200,8 @@ textarea {
     padding: 0;
     background-color: transparent;
     color: #c6c9ce;
-    font-size: 17px; }
+    font-size: 17px;
+    margin-top: 0; }
   .fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper .cf7mls-btns .cf7mls_next {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;

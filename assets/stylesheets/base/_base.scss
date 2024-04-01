@@ -583,6 +583,7 @@ textarea {
     }
     .wpcf7-submit {
         width: 100%;
+        margin-bottom: 0;
     }
     .cf7mls-btns {
         text-emphasis: center;
@@ -592,6 +593,7 @@ textarea {
             background-color: transparent;
             color: #c6c9ce;
             font-size: 17px;
+            margin-top: 0
         }
         .cf7mls_next {
             @include button-style;
