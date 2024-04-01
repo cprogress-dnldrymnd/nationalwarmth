@@ -24,7 +24,7 @@ $icon = get__post_meta('icon');
 <script>
     jQuery(document).ready(function() {
         $key = 1;
-        $length = jQuery('.fieldset-cf7mls').length() + 1;
+        $length = jQuery('.fieldset-cf7mls').length + 1;
         $per_step = 100 / $length;
         console.log($per_step);
         jQuery('.fieldset-cf7mls').each(function(index, element) {
