@@ -48,6 +48,15 @@ p {
 a {
     text-decoration: none;
 }
+
+.wpcf7-submit {
+    @include button-style;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    @include on-event {
+        background-color: var(--secondary-color);
+    }
+}
 .button-box.button-box {
     @include button {
         @include button-style;
@@ -558,12 +567,23 @@ textarea {
     }
 }
 
-.fieldset-cf7mls-wrapper {
+.fieldset-cf7mls-wrapper.fieldset-cf7mls-wrapper {
     label {
         display: inline-flex;
         flex-direction: column;
-        input, select {
+        input,
+        select {
             width: 100%;
+        }
+    }
+    .cf7mls-btns {
+        text-emphasis: center;
+        .cf7mls_back {
+            float: none;
+            padding: 0;
+            background-color: transparent;
+            color: #c6c9ce;
+            font-size: 17px;
         }
     }
 }
