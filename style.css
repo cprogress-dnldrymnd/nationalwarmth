@@ -9964,15 +9964,105 @@ select {
     background-color: var(--gray-color-2); }
 
 .grid-box {
-  padding: 48% 1rem 8% 1rem; }
+  padding: 48% 1rem 8% 1rem;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  overflow: hidden; }
+  .grid-box .background-image {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms; }
+    @media screen and (max-width: 991px) {
+      .grid-box .background-image:before {
+        background: #000 !important;
+        opacity: 0.5 !important;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms; } }
+  .grid-box .heading-box,
+  .grid-box .button-box {
+    z-index: 2; }
+  .grid-box .link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; }
+  @media screen and (max-width: 991px) {
+    .grid-box .grid-inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 2rem; }
+      .grid-box .grid-inner h2 {
+        margin-bottom: 0;
+        border-bottom: 2px solid var(--accent-color);
+        display: inline;
+        line-height: 2; } }
+  @media screen and (min-width: 992px) {
+    .grid-box .grid-inner:before, .grid-box .grid-inner:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+    .grid-box .grid-inner:before {
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms;
+      left: 0; }
+    .grid-box .grid-inner:after {
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms;
+      right: 0; } }
+  @media screen and (max-width: 991px) {
+    .grid-box {
+      padding: 50%; } }
+  .grid-box:hover .grid-inner:before, .grid-box:hover .grid-inner:after, .grid-box:active .grid-inner:before, .grid-box:active .grid-inner:after, .grid-box:focus .grid-inner:before, .grid-box:focus .grid-inner:after {
+    width: 100%; }
+  @media screen and (max-width: 991px) {
+    .grid-box:hover .grid-inner .background-image:before, .grid-box:active .grid-inner .background-image:before, .grid-box:focus .grid-inner .background-image:before {
+      opacity: 0.65 !important; } }
 
 .image-info-box {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto; }
-@includer respond-to(md-lg) {
-  .image-info-box .top-icon {
-    max-width: 35px; } }
+  @media screen and (min-width: 992px) {
+    .image-info-box .top-icon {
+      max-width: 35px; } }
+  .image-info-box .main-image {
+    position: relative;
+    padding: 20%;
+    margin-bottom: 1.875rem; }
+    .image-info-box .main-image img,
+    .image-info-box .main-image svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .image-info-box.small-image .main-image {
+    padding: 12%; }
+
 .mySwiper-Testimonial .swiper-slide .swiper-holder {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
   border-radius: 5px;
