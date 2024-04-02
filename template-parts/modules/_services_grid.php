@@ -13,7 +13,7 @@ if (!$disable_module) { ?>
             <?= $Helpers->get_edit_url('post.php?post=' . $postid . '&action=edit', 'Edit Template') ?>
         <?php } ?>
         <div class="container-fluid gx-0">
-            <div class="row g-3 p-3 justify-content-center">
+            <div class="row g-0 g-sm-3 p-3 justify-content-center">
                 <?php foreach ($services as $key => $service) { ?>
                     <?php
                     $image = get__post_meta_by_id($service['id'], 'grid_image') ? get__post_meta_by_id($service['id'], 'grid_image') : get_post_thumbnail_id($service['id']);
