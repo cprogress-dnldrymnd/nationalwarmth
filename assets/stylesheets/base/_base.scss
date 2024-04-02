@@ -648,6 +648,9 @@ textarea {
     }
     .fields-holder {
         margin-top: 100px;
+        @include responsive(xs) {
+            margin-top: -;
+        }
     }
     .fields-holder,
     .cf7mls-btns {
