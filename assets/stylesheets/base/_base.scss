@@ -304,12 +304,7 @@ textarea {
             }
         }
 
-        h2 {
-            @include responsive(mobile) {
-                font-size: 15px;
-            }
-        }
-
+      
         @include responsive(md-lg) {
             @include before-after {
                 content: "";
