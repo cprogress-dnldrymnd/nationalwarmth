@@ -18,7 +18,7 @@ if (!$disable_module) { ?>
                     <?php
                     $image = get__post_meta_by_id($service['id'], 'grid_image') ? get__post_meta_by_id($service['id'], 'grid_image') : get_post_thumbnail_id($service['id']);
                     ?>
-                    <div class="col-4 col-sm-3">
+                    <div class="col-2 col-sm-3 col-md-4">
                         <div class="column-holder h-100 background-primary">
                             <div class="grid-box h-100 position-relative text-center">
                                 <div class="grid-inner h-100 d-flex flex-column justify-content-center justify-content-lg-end">
