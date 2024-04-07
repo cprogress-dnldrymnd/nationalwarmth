@@ -11254,7 +11254,7 @@ section.footer-navigation {
     #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls:not(.cf7mls_current_fs) {
       display: none; }
   #footerForm .underline {
-    border-bottom: 2px solid var(--secondary-color); }
+    border-bottom: 2px solid var(--accent-color); }
   #footerForm .wpcf7 input {
     border: none;
     border-radius: 5px 0 0 5px;
