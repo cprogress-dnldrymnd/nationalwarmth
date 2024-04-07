@@ -10428,6 +10428,11 @@ textarea {
 .page-template-page-form section {
   overflow: auto; }
 
+.contact-details p a {
+  color: var(--primary-color); }
+.contact-details p:not(:last-child) {
+  margin-bottom: 0; }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");

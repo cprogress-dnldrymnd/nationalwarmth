@@ -685,3 +685,14 @@ textarea {
         overflow: auto;
     }
 }
+
+.contact-details {
+    p {
+        a {
+            color: var(--primary-color);
+        }
+        @include not-last-child {
+            margin-bottom: 0;
+        }
+    }
+}
