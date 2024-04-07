@@ -11612,6 +11612,8 @@ section.the-content {
   section.the-content .container ol li:not(:last-child) {
     margin-bottom: 1rem; }
 
+section.contact-form h2 {
+  margin-bottom: 0; }
 section.contact-form .contact-form-box label {
   width: 100%; }
 section.contact-form .contact-form-box input {
