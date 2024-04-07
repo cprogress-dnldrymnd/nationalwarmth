@@ -737,10 +737,12 @@ textarea {
 .wpcf7-form.wpcf7-form {
     .wpcf7-submit.wpcf7-submit.wpcf7-submit {
         @include button-style;
-        background-color: var(--accent-color);
+        background-color: var(--secondary-color);
         color: var(--white-color);
+        max-width: 385px;
+        width: 100%;
         @include on-event {
-            background-color: var(--secondary-color);
+            background-color: var(--accent-color);
         }
     }
 }

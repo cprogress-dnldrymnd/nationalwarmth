@@ -10487,8 +10487,10 @@ textarea {
   background-color: transparent;
   text-align: center;
   position: relative;
-  background-color: var(--accent-color);
-  color: var(--white-color); }
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  max-width: 385px;
+  width: 100%; }
   .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span {
     position: relative;
     z-index: 1; }
@@ -10509,7 +10511,7 @@ textarea {
     .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit {
       padding: 1rem 1.5rem; } }
   .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:hover, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:active, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nice-select.open, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:focus {
-    background-color: var(--secondary-color); }
+    background-color: var(--accent-color); }
 
 @font-face {
   font-family: "Outfit";
