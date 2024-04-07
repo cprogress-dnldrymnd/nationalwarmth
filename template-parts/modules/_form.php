@@ -33,7 +33,7 @@ $disable_module = $module['disable_module'];
                 <?php if ($image_mobile) { ?>
                     <img class="d-none d-lg-inline" src="<?= wp_get_attachment_image_url($image_mobile, 'large') ?>">
                 <?php } else { ?>
-                    <img class="d-none d-lg-inline" src="<?= wp_get_attachment_image_url($image, 'large') ?>">
+                    <img class="d-inline d-lg-none" src="<?= wp_get_attachment_image_url($image, 'large') ?>">
                 <?php } ?>
 
             </div>
