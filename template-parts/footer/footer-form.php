@@ -6,7 +6,7 @@
                     <button type="button" class="footer-form-close" data-bs-dismiss="offcanvas" aria-label="Close">&#x2715;</button>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h3>
+                    <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Energy Matters</span> magazine</h3>
                     <p>
                         Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
                     </p>
