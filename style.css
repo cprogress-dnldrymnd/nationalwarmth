@@ -10428,20 +10428,22 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
   display: none; }
 
-.form-style-1 .row [class*="col"] > label {
-  width: 100%; }
-  .form-style-1 .row [class*="col"] > label > span {
-    display: block;
-    text-align: left; }
-    .form-style-1 .row [class*="col"] > label > span .required {
-      color: #e53f1e; }
-  .form-style-1 .row [class*="col"] > label input,
-  .form-style-1 .row [class*="col"] > label textarea {
+.form-style-1 {
+  font-size: 16px; }
+  .form-style-1 .row [class*="col"] > label {
     width: 100%; }
-  .form-style-1 .row [class*="col"] > label textarea {
-    height: 105px; }
-.form-style-1 .wpcf7-form-control-wrap {
-  margin-top: 14px; }
+    .form-style-1 .row [class*="col"] > label > span {
+      display: block;
+      text-align: left; }
+      .form-style-1 .row [class*="col"] > label > span .required {
+        color: #e53f1e; }
+    .form-style-1 .row [class*="col"] > label input,
+    .form-style-1 .row [class*="col"] > label textarea {
+      width: 100%; }
+    .form-style-1 .row [class*="col"] > label textarea {
+      height: 105px; }
+  .form-style-1 .wpcf7-form-control-wrap {
+    margin-top: 14px; }
 
 .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance {
   max-width: 358px;
@@ -10456,8 +10458,7 @@ textarea {
     font-weight: 300;
     color: #949aa1;
     display: flex;
-    text-align: left;
-    font-size: 16px; }
+    text-align: left; }
     .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance label input {
       width: 20px;
       margin-top: 4px;

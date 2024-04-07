@@ -686,6 +686,8 @@ textarea {
     display: none;
 }
 .form-style-1 {
+    font-size: 16px;
+
     .row {
         [class*="col"] {
             > label {
@@ -726,7 +728,6 @@ textarea {
         color: #949aa1;
         display: flex;
         text-align: left;
-        font-size: 16px;
         input {
             width: 20px;
             margin-top: 4px;
