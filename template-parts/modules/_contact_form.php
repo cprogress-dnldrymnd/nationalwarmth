@@ -16,22 +16,23 @@ $Theme_Options = new Theme_Options();
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <?php
-                    $DisplayData->heading(array(
-                        'heading' => $heading
-                    ), 'text-center mb-5');
-
-                    $Theme_Options->phone_number_url;
-                    $Theme_Options->email_address_url;
-                    $Theme_Options->office_hours;
-
-                    ?>
+                 
+                    <h5> Contact Details </h5>
+                    <?= $Theme_Options->phone_number_url; ?>
+                    <?= $Theme_Options->email_address_url; ?>
+                    <h5> Office Hours </h5>
+                    <?= $Theme_Options->office_hours; ?>
 
 
 
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form-box">
+                        <?php
+                        $DisplayData->heading(array(
+                            'heading' => $heading
+                        ), 'text-center mb-5');
+                        ?>
                         <?= do_shortcode($contact_form) ?>
                     </div>
                 </div>
