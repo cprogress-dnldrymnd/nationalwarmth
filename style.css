@@ -11614,5 +11614,9 @@ section.the-content {
 
 section.contact-form .contact-form-box label {
   width: 100%; }
+section.contact-form .contact-form-box input {
+  width: 100%; }
+section.contact-form .contact-form-box textarea {
+  height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
