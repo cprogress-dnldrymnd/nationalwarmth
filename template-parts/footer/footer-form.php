@@ -20,7 +20,7 @@
 </div>
 
 <script>
-    const myModalEl = document.getElementById('footerForm');
-    var modal = bootstrap.Offcanvas.getInstance(myModalEl);
-    modal.show();
+    var myOffcanvas = document.getElementById('footerForm')
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
+    bsOffcanvas.show();
 </script>
