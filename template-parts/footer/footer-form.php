@@ -8,7 +8,7 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-auto">
-s
+                            <img src="https://nationalwarmth.co.uk/wp-content/uploads/2024/04/OCPhoto.734182818.162821.jpeg" alt="">
                         </div>
                         <div class="col">
                             <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Energy Matters</span> magazine</h3>
