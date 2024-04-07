@@ -708,3 +708,17 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
     display: none;
 }
+.form-style-1 {
+    label {
+        > span {
+            display: block;
+            text-align: left;
+            .required {
+                color: #e53f1e;
+            }
+        }
+        input, textarea {
+            width: 100%;
+        }
+    }
+}

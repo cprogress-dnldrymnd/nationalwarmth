@@ -10487,6 +10487,14 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
   display: none; }
 
+.form-style-1 label > span {
+  display: block;
+  text-align: left; }
+  .form-style-1 label > span .required {
+    color: #e53f1e; }
+.form-style-1 label input, .form-style-1 label textarea {
+  width: 100%; }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");
