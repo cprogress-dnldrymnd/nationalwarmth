@@ -11141,6 +11141,8 @@ section.footer-navigation {
 
 #footerForm {
   height: auto; }
+  #footerForm .form-wrapper {
+    max-width: 1320px; }
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
     display: flex;
     align-items: center; }

@@ -46,6 +46,9 @@ section.footer-navigation {
 
 #footerForm {
 	height: auto;
+	.form-wrapper {
+		max-width: 1320px;
+	}
 	.fieldset-cf7mls-wrapper {
 		.fieldset-cf7mls {
 			display: flex;
