@@ -9,6 +9,7 @@ body {
     }
 }
 body {
+    overflow: auto !important;
     &.mega-menu-header-menu {
         .navbar-collapse {
             display: block !important;
@@ -701,4 +702,8 @@ textarea {
             margin-bottom: 0;
         }
     }
+}
+
+.offcanvas-backdrop.offcanvas-backdrop {
+    display: none;
 }

@@ -9845,10 +9845,12 @@ body {
   body.menu-active {
     overflow: hidden; }
 
-body.mega-menu-header-menu .navbar-collapse {
-  display: block !important; }
-body.mega-menu-header-menu .mobile-buttons {
-  display: none !important; }
+body {
+  overflow: auto !important; }
+  body.mega-menu-header-menu .navbar-collapse {
+    display: block !important; }
+  body.mega-menu-header-menu .mobile-buttons {
+    display: none !important; }
 
 @media screen and (max-width: 991px) {
   main {
@@ -10480,6 +10482,9 @@ textarea {
   color: var(--primary-color); }
 .contact-details-holder p:not(:last-child) {
   margin-bottom: 0; }
+
+.offcanvas-backdrop.offcanvas-backdrop {
+  display: none; }
 
 @font-face {
   font-family: "Outfit";
