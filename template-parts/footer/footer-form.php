@@ -8,7 +8,7 @@
                 <div class="col-lg-6">
                     <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Energy Matters</span> magazine</h3>
                     <p>
-                        Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
+                        Sign up to receive our <strong>FREE</strong> quarterly energy reduction advice magazine
                     </p>
                 </div>
                 <div class="col-lg-5">
