@@ -66,5 +66,20 @@ section.footer-navigation {
 		button {
 			border-radius: 0 5px 5px 0;
 		}
+		.footer-form-close {
+			color: var(--white-color);
+			background-color: var(--secondary-color);
+			border: none;
+			padding: 5px;
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 5px;
+		}
+	}
+	.wpcf7-not-valid-tip {
+		color: var(--secondary-color);
 	}
 }
