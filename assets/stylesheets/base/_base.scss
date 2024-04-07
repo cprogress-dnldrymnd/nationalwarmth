@@ -10,6 +10,7 @@ body {
 }
 body {
     overflow: auto !important;
+    padding-right: 0 !important;
     &.mega-menu-header-menu {
         .navbar-collapse {
             display: block !important;

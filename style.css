@@ -9846,7 +9846,8 @@ body {
     overflow: hidden; }
 
 body {
-  overflow: auto !important; }
+  overflow: auto !important;
+  padding-right: 0 !important; }
   body.mega-menu-header-menu .navbar-collapse {
     display: block !important; }
   body.mega-menu-header-menu .mobile-buttons {
