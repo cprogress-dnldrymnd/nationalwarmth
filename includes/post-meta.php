@@ -1096,7 +1096,7 @@ Container::make('theme_options', __('Teams Settings'))
 /* Teams 
 /*-----------------------------------------------------------------------------------*/
 
-	Container::make('post_meta', 'Thank you page settings')
+	Container::make('post_meta', 'Form settings')
 	->where('post_template', '=', 'templates/page-form.php')
 	->add_fields(
 		array(
