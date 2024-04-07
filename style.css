@@ -10502,7 +10502,10 @@ textarea {
     flex-direction: row;
     align-items: flex-start;
     font-weight: 300;
-    color: #949aa1; }
+    color: #949aa1;
+    display: flex;
+    text-align: left;
+    font-size: 16px; }
     .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance label input {
       width: 20px;
       margin-top: 4px;

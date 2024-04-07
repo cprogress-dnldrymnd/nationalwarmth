@@ -732,6 +732,9 @@ textarea {
         align-items: flex-start;
         font-weight: 300;
         color: #949aa1;
+        display: flex;
+        text-align: left;
+        font-size: 16px;
         input {
             width: 20px;
             margin-top: 4px;
