@@ -25,7 +25,7 @@
             var myOffcanvas = document.getElementById('footerForm')
             var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
             bsOffcanvas.show();
-            setCookie('energy_matters_display', 'false');
+            setCookie('energy_matters_display', 'false', 1);
         }
     });
 
