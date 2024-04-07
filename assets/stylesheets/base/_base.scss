@@ -710,6 +710,7 @@ textarea {
 }
 .form-style-1 {
     label {
+        width: 100%;
         > span {
             display: block;
             text-align: left;
@@ -720,5 +721,8 @@ textarea {
         input, textarea {
             width: 100%;
         }
+    }
+    .wpcf7-form-control-wrap {
+        margin-top: 14px;
     }
 }
