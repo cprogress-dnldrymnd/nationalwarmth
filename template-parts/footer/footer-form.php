@@ -3,18 +3,20 @@
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
 
     <div class="offcanvas-body">
-        <div class="row">
-            <div class="col-lg-2">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="col-lg-5">
-                <h5 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h5>
-                <p>
-                    Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
-                </p>
-            </div>
-            <div class="col-lg-5">
-                <?= do_shortcode('[contact-form-7 id="0987dbf" title="Footer Form"]') ?>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h5>
+                    <p>
+                        Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <?= do_shortcode('[contact-form-7 id="0987dbf" title="Footer Form"]') ?>
+                </div>
             </div>
         </div>
     </div>
