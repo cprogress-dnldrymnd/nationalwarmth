@@ -36,7 +36,7 @@ $Theme_Options = new Theme_Options();
                         <?php
                         $DisplayData->heading(array(
                             'heading' => $heading
-                        ), 'text-center mb-5');
+                        ), 'mb-5');
                         ?>
                         <?= do_shortcode($contact_form) ?>
                     </div>
