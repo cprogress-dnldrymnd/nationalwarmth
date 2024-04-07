@@ -47,6 +47,12 @@ section.footer-navigation {
 #footerForm {
 	height: auto;
 	font-size: 20px;
+	overflow: visible;
+	img {
+		@include responsive(md-lg) {
+			margin-top: -40px;
+		}
+	}
 	.form-wrapper {
 		max-width: 1320px;
 	}

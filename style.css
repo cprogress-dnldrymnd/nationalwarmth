@@ -11227,7 +11227,11 @@ section.footer-navigation {
 
 #footerForm {
   height: auto;
-  font-size: 20px; }
+  font-size: 20px;
+  overflow: visible; }
+  @media screen and (min-width: 992px) {
+    #footerForm img {
+      margin-top: -40px; } }
   #footerForm .form-wrapper {
     max-width: 1320px; }
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
