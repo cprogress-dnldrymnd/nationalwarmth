@@ -844,6 +844,7 @@ $PostMeta = new PostMeta();
 Container::make('post_meta', 'Page Banner')
 	->where('post_type', '=', 'page')
 	->where('post_template', '!=', 'templates/landing-page.php')
+	->where('post_template', '!=', 'templates/page-thank-you.php')
 	->or_where('post_type', '=', 'services')
 	->add_fields(
 		array_merge(
@@ -1096,10 +1097,11 @@ Container::make('theme_options', __('Teams Settings'))
 /*-----------------------------------------------------------------------------------*/
 
 	Container::make('post_meta', 'Thank you page settings')
-	->where('post_template', '=', 'templates/page-thank-you.php')
+	->where('post_template', '=', 'templates/page-form.php')
 	->add_fields(
 		array(
 			Field::make('text', 'contact_form', 'Contact Form'),
+			Field::make('text', 'thank_you_page', 'Thank you page'),
 		)
 	);
 
