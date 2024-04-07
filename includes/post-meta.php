@@ -309,6 +309,7 @@ class ModulesFields extends GetData
 					Field::make('text', 'heading', __('heading')),
 					Field::make('text', 'description', __('Description')),
 					Field::make('image', 'image', __('Image'))
+					Field::make('image', 'image_mobile', __('Image Mobile'))
 				)
 			)
 		);
