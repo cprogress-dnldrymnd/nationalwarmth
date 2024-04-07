@@ -6,6 +6,7 @@
 <?php get_header('form'); ?>
 <?php
 $icon = get__post_meta('icon');
+$icon = get__post_meta('icon');
 ?>
 <main id="main" class="page-components page-components">
     <div class="form-progress">

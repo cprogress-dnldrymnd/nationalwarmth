@@ -868,15 +868,7 @@ Container::make('post_meta', 'Page Banner')
 		)
 	);
 
-/*-----------------------------------------------------------------------------------*/
-/* Thank you page
-/*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', 'Thank you page')
-	->where('post_template', '=', 'templates/page-thank-you.php')
-	->add_fields(array(
-		Field::make('image', 'icon', 'Icon'),
-		Field::make('image', 'image', 'Image'),
-	));
+
 
 /*
 Container::make('post_meta', 'Page Icon')
@@ -1096,7 +1088,7 @@ Container::make('theme_options', __('Teams Settings'))
 /* Teams 
 /*-----------------------------------------------------------------------------------*/
 
-	Container::make('post_meta', 'Form settings')
+Container::make('post_meta', 'Form settings')
 	->where('post_template', '=', 'templates/page-form.php')
 	->add_fields(
 		array(
@@ -1106,4 +1098,11 @@ Container::make('theme_options', __('Teams Settings'))
 	);
 
 
-	
+/*-----------------------------------------------------------------------------------*/
+/* Thank you page
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', 'Thank you page')
+	->where('post_template', '=', 'templates/page-thank-you.php')
+	->add_fields(array(
+		Field::make('image', 'icon', 'Icon'),
+	));
