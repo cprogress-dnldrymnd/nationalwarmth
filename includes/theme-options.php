@@ -29,6 +29,9 @@ class Theme_Options extends Helpers {
 		$this->landing_top_bar_text = get__theme_option('landing_top_bar_text');
 		$this->hero_banner_logo = get__theme_option('hero_banner_logo');
 		$this->header_icon_menu = get__theme_option('header_icon_menu');
+
+		$this->office_hours = wpautop(get__theme_option('office_hours'));
+
 		
 		$this->whatsapp_url = 'https://'.get__theme_option('whats_app_rul');
 		
