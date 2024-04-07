@@ -665,7 +665,7 @@ class ModulesFields extends GetData
 					Field::make('text', 'heading', 'Heading'),
 					Field::make('textarea', 'description', 'Description'),
 					Field::make('select', 'contact_form', 'Contact Form')
-					->set_options($this->get_contact_forms()),
+						->set_options($this->get_contact_forms()),
 				)
 			)
 		);
@@ -1080,6 +1080,28 @@ Container::make('post_meta', 'Team Settings')
 	->add_fields(
 		array(
 			Field::make('text', 'position', 'Position'),
+		)
+	);
+
+Container::make('theme_options', __('Teams Settings'))
+	->set_page_parent('edit.php?post_type=teams')
+	->add_tab('General Settings', array(
+		Field::make('text', 'teams_alt_title', 'Alt Title'),
+		Field::make('textarea', 'teams_description', 'Description'),
+	));
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Teams 
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', 'Thank you page settings')
+	->where('post_template', '=', 'templates/page-thank-you.php')
+	->add_fields(
+		array(
+			Field::make('text', 'heading', 'Heading'),
+			Field::make('text', 'contact_form', 'Contact Form'),
+			Field::make('image', 'image', 'Image'),
 		)
 	);
 
