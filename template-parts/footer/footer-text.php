@@ -1,4 +1,4 @@
-<section class="footer-text xs-padding">
+<section class="footer-text xs-padding d-none">
 	<div class="container">
 		<div class="description-box extra-samll-text">
 			<p>
