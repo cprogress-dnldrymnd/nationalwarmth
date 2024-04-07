@@ -1,5 +1,3 @@
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#footerForm" aria-controls="footerForm">Toggle top offcanvas</button>
-
 <div class="offcanvas offcanvas-bottom background-accent" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
     <div class="offcanvas-body">
         <div class="form-wrapper mx-auto">
