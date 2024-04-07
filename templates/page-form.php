@@ -10,7 +10,7 @@ $thank_you_page = get__post_meta('thank_you_page');
 ?>
 <main id="main" class="page-components mt-0">
     <div class="form-progress">
-        <div class="progress-holder"></div>
+        <div class="progress-holder" style="--progress-width: 0"></div>
     </div>
     <section class="form-section md-padding">
         <div class="container">
