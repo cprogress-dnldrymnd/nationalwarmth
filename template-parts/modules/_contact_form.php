@@ -40,7 +40,7 @@ $Theme_Options = new Theme_Options();
                         ), 'mb-3');
                         $DisplayData->description(array(
                             'description' => $description
-                        ), 'mb-5');
+                        ), 'mb-3');
                         ?>
                         <?= do_shortcode($contact_form) ?>
                     </div>
