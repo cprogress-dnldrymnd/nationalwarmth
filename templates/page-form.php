@@ -5,7 +5,8 @@
 ?>
 <?php get_header('form'); ?>
 <?php
-$icon = get__post_meta('icon');
+$contact_form = get__post_meta('contact_form');
+$thank_you_page = get__post_meta('thank_you_page');
 ?>
 <main id="main" class="page-components mt-0">
     <div class="form-progress">
@@ -14,7 +15,7 @@ $icon = get__post_meta('icon');
     <section class="form-section md-padding">
         <div class="container">
             <div class="inner text-center">
-                <?= do_shortcode('[contact-form-7 id="4ab7e41" title="Find installer Form"]') ?>
+                <?= do_shortcode($contact_form) ?>
             </div>
         </div>
     </section>
@@ -48,6 +49,6 @@ $icon = get__post_meta('icon');
 
     document.addEventListener('wpcf7mailsent', function(event) {
         email = jQuery('input[name="your-email"]').val();
-        window.location.href = 'https://nationalwarmth.co.uk/find-an-energy-installer-thank-you/?email=' + email;
+        window.location.href = '<?= $thank_you_page ?>/?email=' + email;
     }, false);
 </script>
