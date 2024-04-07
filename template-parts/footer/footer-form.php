@@ -1,7 +1,7 @@
 <div class="offcanvas offcanvas-bottom background-secondary" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
     <div class="offcanvas-body">
         <div class="form-wrapper mx-auto">
-            <div class="row align-items-center">
+            <div class="row g-4 align-items-center">
                 <div class="col-lg-1">
                     <button type="button" class="footer-form-close" data-bs-dismiss="offcanvas" aria-label="Close">&#x2715;</button>
                 </div>
