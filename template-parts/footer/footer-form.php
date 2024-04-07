@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-bottom background-accent" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
+<div class="offcanvas offcanvas-bottom background-secondary" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
     <div class="offcanvas-body">
         <div class="form-wrapper mx-auto">
             <div class="row align-items-center">
