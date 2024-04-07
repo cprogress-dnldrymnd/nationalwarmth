@@ -709,20 +709,25 @@ textarea {
     display: none;
 }
 .form-style-1 {
-    label {
-        width: 100%;
-        > span {
-            display: block;
-            text-align: left;
-            .required {
-                color: #e53f1e;
+    .row {
+        [class*="col"] {
+            > label {
+                width: 100%;
+                > span {
+                    display: block;
+                    text-align: left;
+                    .required {
+                        color: #e53f1e;
+                    }
+                }
+                input,
+                textarea {
+                    width: 100%;
+                }
+                textarea {
+                    height: 105px;
+                }
             }
-        }
-        input, textarea {
-            width: 100%;
-        }
-        textarea {
-            height: 105px;
         }
     }
     .wpcf7-form-control-wrap {
