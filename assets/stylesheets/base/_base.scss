@@ -632,22 +632,7 @@ textarea {
             }
         }
     }
-    .wpcf7-acceptance {
-        .wpcf7-list-item {
-            margin: 0;
-        }
-        label {
-            flex-direction: row;
-            align-items: flex-start;
-            font-weight: 300;
-            color: #949aa1;
-            input {
-                width: 20px;
-                margin-top: 4px;
-                margin-right: 10px;
-            }
-        }
-    }
+ 
 }
 
 .form-section {
@@ -732,5 +717,25 @@ textarea {
     }
     .wpcf7-form-control-wrap {
         margin-top: 14px;
+    }
+}
+.wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    .wpcf7-list-item {
+        margin: 0;
+    }
+    label {
+        flex-direction: row;
+        align-items: flex-start;
+        font-weight: 300;
+        color: #949aa1;
+        input {
+            width: 20px;
+            margin-top: 4px;
+            margin-right: 10px;
+        }
     }
 }
