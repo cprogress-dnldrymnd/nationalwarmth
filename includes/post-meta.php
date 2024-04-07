@@ -663,8 +663,9 @@ class ModulesFields extends GetData
 				array(
 					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
 					Field::make('text', 'heading', 'Heading'),
+					Field::make('text', 'description', 'Description'),
 					Field::make('select', 'contact_form', 'Contact Form')
-						->set_options($this->get_contact_forms())
+					->set_options($this->get_contact_forms()),
 				)
 			)
 		);
