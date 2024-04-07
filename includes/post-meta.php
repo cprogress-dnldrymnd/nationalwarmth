@@ -1100,9 +1100,7 @@ Container::make('theme_options', __('Teams Settings'))
 	->where('post_template', '=', 'templates/page-thank-you.php')
 	->add_fields(
 		array(
-			Field::make('text', 'heading', 'Heading'),
 			Field::make('text', 'contact_form', 'Contact Form'),
-			Field::make('image', 'image', 'Image'),
 		)
 	);
 
