@@ -10199,22 +10199,24 @@ textarea {
   .image-info-box.small-image .main-image {
     padding: 12%; }
 
-.mySwiper-Testimonial .swiper-slide .swiper-holder {
-  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
-  border-radius: 5px;
-  background-color: var(--white-color);
-  position: relative; }
-  .mySwiper-Testimonial .swiper-slide .swiper-holder .stars {
-    margin-right: 1rem; }
-  @media (min-width: 576px) and (max-width: 767px) {
-    .mySwiper-Testimonial .swiper-slide .swiper-holder .day {
-      font-size: 0.75rem; } }
-  .mySwiper-Testimonial .swiper-slide .swiper-holder .inner {
-    max-width: 300px; }
-    .mySwiper-Testimonial .swiper-slide .swiper-holder .inner .author-box {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 1.5rem; }
+.mySwiper-Testimonial .swiper-slide {
+  height: auto !important; }
+  .mySwiper-Testimonial .swiper-slide .swiper-holder {
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    position: relative; }
+    .mySwiper-Testimonial .swiper-slide .swiper-holder .stars {
+      margin-right: 1rem; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .mySwiper-Testimonial .swiper-slide .swiper-holder .day {
+        font-size: 0.75rem; } }
+    .mySwiper-Testimonial .swiper-slide .swiper-holder .inner {
+      max-width: 300px; }
+      .mySwiper-Testimonial .swiper-slide .swiper-holder .inner .author-box {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem; }
 
 .subscribe-box input[type="email"] {
   max-width: 275px; }
