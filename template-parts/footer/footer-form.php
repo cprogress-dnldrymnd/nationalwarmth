@@ -1,11 +1,21 @@
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#footerForm" aria-controls="footerForm">Toggle top offcanvas</button>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="footerFormLabel">Offcanvas top</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerForm" aria-labelledby="footerFormLabel">
+
     <div class="offcanvas-body">
-        ...
+        <div class="row">
+            <div class="col-lg-2">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="col-lg-5">
+                <h5 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h5>
+                <p>
+                    Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <?= do_shortcode('[contact-form-7 id="0987dbf" title="Footer Form"]') ?>
+            </div>
+        </div>
     </div>
 </div>
