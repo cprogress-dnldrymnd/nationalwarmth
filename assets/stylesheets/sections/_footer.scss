@@ -53,6 +53,9 @@ section.footer-navigation {
 		.fieldset-cf7mls {
 			display: flex;
 			align-items: center;
+			&:not(.cf7mls_current_fs) {
+				display: none;
+			}
 		}
 	}
 	.underline {
@@ -65,6 +68,10 @@ section.footer-navigation {
 		}
 		button {
 			border-radius: 0 5px 5px 0;
+		}
+		.cf7mls-btns {
+			min-height: auto;
+			margin: 0;
 		}
 	
 	}

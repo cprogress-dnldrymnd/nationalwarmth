@@ -11146,6 +11146,8 @@ section.footer-navigation {
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
     display: flex;
     align-items: center; }
+    #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls:not(.cf7mls_current_fs) {
+      display: none; }
   #footerForm .underline {
     border-bottom: 2px solid var(--secondary-color); }
   #footerForm .wpcf7 input {
@@ -11153,6 +11155,9 @@ section.footer-navigation {
     border-radius: 5px 0 0 5px; }
   #footerForm .wpcf7 button {
     border-radius: 0 5px 5px 0; }
+  #footerForm .wpcf7 .cf7mls-btns {
+    min-height: auto;
+    margin: 0; }
   #footerForm .footer-form-close {
     color: var(--white-color);
     background-color: var(--secondary-color);
