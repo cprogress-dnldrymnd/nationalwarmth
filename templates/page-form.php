@@ -25,9 +25,13 @@ $thank_you_page = get__post_meta('thank_you_page');
 <script>
     jQuery(document).ready(function() {
         $key = 1;
-        $length = jQuery('.fieldset-cf7mls').length + 1;
+        if (jQuery('.fieldset-cf7mls').length > 0) {
+            $length = jQuery('.fieldset-cf7mls').length + 1;
+
+        } else {
+            $length = 2;
+        }
         $per_step = 100 / $length;
-        console.log($per_step);
 
         jQuery('.progress-holder').css('--progress-width', $per_step + '%');
         jQuery('.fieldset-cf7mls').each(function(index, element) {
