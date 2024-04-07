@@ -4,11 +4,11 @@
     <div class="offcanvas-body">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="col-lg-5">
-                    <h5 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h5>
+                <div class="col-lg-6">
+                    <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h3>
                     <p>
                         Sign up to receive our <strong>FREE</strong> quarterly financial advice magazine.
                     </p>

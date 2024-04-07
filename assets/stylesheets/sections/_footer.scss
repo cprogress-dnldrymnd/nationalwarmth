@@ -1,7 +1,7 @@
 section.footer-logos {
 	position: relative;
 	@include before {
-		content: '';
+		content: "";
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -41,5 +41,23 @@ section.footer-navigation {
 		@include responsive(xs-md) {
 			justify-content: flex-start !important;
 		}
+	}
+}
+
+#footerForm {
+	height: auto;
+	.fieldset-cf7mls-wrapper {
+		.fieldset-cf7mls {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	input {
+		border: none;
+		border-radius: 5px 0 0 5px;
+	}
+	button {
+		border-radius: 0 5px 5px 0;
 	}
 }
