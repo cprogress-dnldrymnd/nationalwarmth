@@ -10476,9 +10476,9 @@ textarea {
 .page-template-page-form section {
   overflow: auto; }
 
-.contact-details p a {
+.contact-details-holder p a {
   color: var(--primary-color); }
-.contact-details p:not(:last-child) {
+.contact-details-holder p:not(:last-child) {
   margin-bottom: 0; }
 
 @font-face {
