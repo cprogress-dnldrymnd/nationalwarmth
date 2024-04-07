@@ -11145,7 +11145,15 @@ section.footer-navigation {
     max-width: 1320px; }
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
+    #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .wpcf7-form-control-wrap {
+      flex: 0 0 70%; }
+    #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns {
+      min-height: auto !important;
+      margin: 0 !important;
+      flex: 0 0 30% button;
+        flex-margin-bottom: 0; }
     #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls:not(.cf7mls_current_fs) {
       display: none; }
   #footerForm .underline {
@@ -11155,9 +11163,6 @@ section.footer-navigation {
     border-radius: 5px 0 0 5px; }
   #footerForm .wpcf7 button {
     border-radius: 0 5px 5px 0; }
-  #footerForm .wpcf7 .cf7mls-btns {
-    min-height: auto !important;
-    margin: 0 !important; }
   #footerForm .footer-form-close {
     color: var(--white-color);
     background-color: var(--secondary-color);
@@ -11169,7 +11174,7 @@ section.footer-navigation {
     align-items: center;
     justify-content: center;
     border-radius: 5px; }
-  #footerForm .wpcf7-not-valid-tip {
+  #footerForm .wpcf7-not-valid-tip, #footerForm .wpcf7-response-output {
     color: var(--white-color); }
 
 /*-----------------------------------------------------------------------------------*/
