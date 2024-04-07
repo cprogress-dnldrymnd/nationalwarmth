@@ -721,6 +721,9 @@ textarea {
         input, textarea {
             width: 100%;
         }
+        textarea {
+            height: 105px;
+        }
     }
     .wpcf7-form-control-wrap {
         margin-top: 14px;

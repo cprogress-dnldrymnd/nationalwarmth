@@ -10496,6 +10496,8 @@ textarea {
       color: #e53f1e; }
   .form-style-1 label input, .form-style-1 label textarea {
     width: 100%; }
+  .form-style-1 label textarea {
+    height: 105px; }
 .form-style-1 .wpcf7-form-control-wrap {
   margin-top: 14px; }
 
