@@ -11227,8 +11227,9 @@ section.footer-navigation {
 
 #footerForm {
   height: auto;
-  font-size: 20px;
-  overflow: visible; }
+  font-size: 20px; }
+  #footerForm .offcanvas-body {
+    overflow: visible; }
   @media screen and (min-width: 992px) {
     #footerForm img {
       margin-top: -40px; } }

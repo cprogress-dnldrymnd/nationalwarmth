@@ -47,7 +47,10 @@ section.footer-navigation {
 #footerForm {
 	height: auto;
 	font-size: 20px;
-	overflow: visible;
+	.offcanvas-body {
+		overflow: visible;
+
+	}
 	img {
 		@include responsive(md-lg) {
 			margin-top: -40px;
