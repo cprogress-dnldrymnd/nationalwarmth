@@ -844,7 +844,6 @@ $PostMeta = new PostMeta();
 Container::make('post_meta', 'Page Banner')
 	->where('post_type', '=', 'page')
 	->where('post_template', '!=', 'templates/landing-page.php')
-	->where('post_template', '!=', 'templates/page-thank-you.php')
 	->or_where('post_type', '=', 'services')
 	->add_fields(
 		array_merge(
