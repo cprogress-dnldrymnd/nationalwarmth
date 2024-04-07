@@ -3,7 +3,6 @@ $DisplayData = new DisplayData;
 $Helpers = new Helpers;
 $GetData = new GetData;
 $heading = $module['heading'];
-$heading = $module['description'];
 $description = $module['description'];
 $image = $module['image'];
 $image_mobile = $module['image_mobile'];
