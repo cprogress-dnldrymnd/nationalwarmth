@@ -20,3 +20,9 @@
         </div>
     </div>
 </div>
+
+<script>
+    const myModalEl = document.getElementById('footerForm');
+    var modal = bootstrap.OffCanvas.getInstance(myModalEl);
+    modal.hide();
+</script>
