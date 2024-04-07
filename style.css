@@ -11244,7 +11244,13 @@ section.footer-navigation {
       width: 30%; }
       #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns button {
         margin-bottom: 0;
-        margin-top: 0; }
+        margin-top: 0;
+        background-color: var(--accent-color);
+        border-color: var(--accent-color) !important; }
+        #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns button:hover, #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns button:active, #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns button.nice-select.open, #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls .cf7mls-btns button:focus {
+          background-color: var(--white-color);
+          border-color: var(--accent-color) !important;
+          color: var(--accent-color); }
     #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls:not(.cf7mls_current_fs) {
       display: none; }
   #footerForm .underline {

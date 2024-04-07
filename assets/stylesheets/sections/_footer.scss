@@ -67,6 +67,13 @@ section.footer-navigation {
 				button {
 					margin-bottom: 0;
 					margin-top: 0;
+					background-color: var(--accent-color);
+					border-color: var(--accent-color) !important;
+					@include on-event {
+						background-color: var(--white-color);
+						border-color: var(--accent-color) !important;
+						color: var(--accent-color);
+					}
 				}
 			}
 			&:not(.cf7mls_current_fs) {
