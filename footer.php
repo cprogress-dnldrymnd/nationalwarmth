@@ -8,6 +8,7 @@ do_action( 'open_footer');
 get_template_part('template-parts/footer/footer', 'logo') ;
 get_template_part('template-parts/footer/footer', 'navigation') ;
 get_template_part('template-parts/footer/footer', 'text') ;
+get_template_part('template-parts/footer/footer', 'form') ;
 do_action( 'close_footer' );
 ?>
 
