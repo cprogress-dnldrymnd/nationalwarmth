@@ -172,7 +172,6 @@ function swiper_slider() {
 	var testimonialSwiper = new Swiper(".mySwiper-Testimonial", {
 		loop: true,
 		spaceBetween: 30,
-		autoHeight: true,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: true,
