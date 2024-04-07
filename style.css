@@ -11156,8 +11156,8 @@ section.footer-navigation {
   #footerForm .wpcf7 button {
     border-radius: 0 5px 5px 0; }
   #footerForm .wpcf7 .cf7mls-btns {
-    min-height: auto;
-    margin: 0; }
+    min-height: auto !important;
+    margin: 0 !important; }
   #footerForm .footer-form-close {
     color: var(--white-color);
     background-color: var(--secondary-color);
