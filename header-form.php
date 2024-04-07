@@ -31,11 +31,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+    <?php
+    $Theme_Options = new Theme_Options();
+    ?>
     <header class="form-header xs-padding">
         <div class="container">
-            <a href="<?= get_site_url() ?>">
-                <img src="https://nationalwarmth.co.uk/wp-content/uploads/2024/04/nw-logo.png" alt="">
-            </a>
+            <?= $Theme_Options->logo ?>
         </div>
     </header>
