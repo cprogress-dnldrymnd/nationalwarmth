@@ -11153,7 +11153,7 @@ section.footer-navigation {
     border-radius: 5px 0 0 5px; }
   #footerForm .wpcf7 button {
     border-radius: 0 5px 5px 0; }
-  #footerForm .wpcf7 .footer-form-close {
+  #footerForm .footer-form-close {
     color: var(--white-color);
     background-color: var(--secondary-color);
     border: none;
