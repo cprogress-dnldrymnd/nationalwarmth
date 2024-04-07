@@ -21,6 +21,6 @@
 
 <script>
     const myModalEl = document.getElementById('footerForm');
-    var modal = bootstrap.OffCanvas.getInstance(myModalEl);
+    var modal = bootstrap.Offcanvas.getInstance(myModalEl);
     modal.hide();
 </script>
