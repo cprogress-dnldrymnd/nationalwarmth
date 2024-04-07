@@ -11140,7 +11140,8 @@ section.footer-navigation {
         justify-content: flex-start !important; } }
 
 #footerForm {
-  height: auto; }
+  height: auto;
+  font-size: 20px; }
   #footerForm .form-wrapper {
     max-width: 1320px; }
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
