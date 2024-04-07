@@ -3,6 +3,7 @@ $DisplayData = new DisplayData;
 $Helpers = new Helpers;
 $GetData = new GetData;
 $heading = $module['heading'];
+$description = $module['description'];
 $contact_form = $module['contact_form'];
 $disable_module = $module['disable_module'];
 $Theme_Options = new Theme_Options();
@@ -36,6 +37,9 @@ $Theme_Options = new Theme_Options();
                         <?php
                         $DisplayData->heading(array(
                             'heading' => $heading
+                        ), 'mb-3');
+                        $DisplayData->description(array(
+                            'description' => $description
                         ), 'mb-5');
                         ?>
                         <?= do_shortcode($contact_form) ?>
