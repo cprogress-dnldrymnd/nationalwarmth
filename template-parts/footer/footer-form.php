@@ -6,7 +6,7 @@
                     <button type="button" class="footer-form-close" data-bs-dismiss="offcanvas" aria-label="Close">&#x2715;</button>
                 </div>
                 <div class="col-lg-6">
-                    <div class="row">
+                    <div class="row g-3 align-items-center">
                         <div class="col-auto">
                             <img src="https://nationalwarmth.co.uk/wp-content/uploads/2024/04/OCPhoto.734182818.162821.jpeg" alt="">
                         </div>
