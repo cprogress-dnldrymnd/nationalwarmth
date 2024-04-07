@@ -55,12 +55,16 @@ section.footer-navigation {
 			align-items: center;
 		}
 	}
-
-	input {
-		border: none;
-		border-radius: 5px 0 0 5px;
+	.underline {
+		border-bottom: 2px solid var(--secondary-color);
 	}
-	button {
-		border-radius: 0 5px 5px 0;
+	.wpcf7 {
+		input {
+			border: none;
+			border-radius: 5px 0 0 5px;
+		}
+		button {
+			border-radius: 0 5px 5px 0;
+		}
 	}
 }

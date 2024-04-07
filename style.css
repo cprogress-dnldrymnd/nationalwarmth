@@ -11146,10 +11146,12 @@ section.footer-navigation {
   #footerForm .fieldset-cf7mls-wrapper .fieldset-cf7mls {
     display: flex;
     align-items: center; }
-  #footerForm input {
+  #footerForm .underline {
+    border-bottom: 2px solid var(--secondary-color); }
+  #footerForm .wpcf7 input {
     border: none;
     border-radius: 5px 0 0 5px; }
-  #footerForm button {
+  #footerForm .wpcf7 button {
     border-radius: 0 5px 5px 0; }
 
 /*-----------------------------------------------------------------------------------*/

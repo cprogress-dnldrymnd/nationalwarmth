@@ -5,7 +5,7 @@
         <div class="form-wrapper mx-auto">
             <div class="row align-items-center">
                 <div class="col-lg-1">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="footer-form-close" data-bs-dismiss="offcanvas" aria-label="Close">&#10060;</button>
                 </div>
                 <div class="col-lg-6">
                     <h3 class="offcanvas-title" id="footerFormLabel">Get our <span class="underline">Money Matters</span> magazine</h3>
