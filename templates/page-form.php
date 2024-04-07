@@ -10,7 +10,7 @@ $thank_you_page = get__post_meta('thank_you_page');
 ?>
 <main id="main" class="page-components mt-0">
     <div class="form-progress">
-        <div class="progress-holder" style="--progress-width: 33.3333333%"></div>
+        <div class="progress-holder"></div>
     </div>
     <section class="form-section md-padding">
         <div class="container">
@@ -27,9 +27,9 @@ $thank_you_page = get__post_meta('thank_you_page');
         $key = 1;
         $length = jQuery('.fieldset-cf7mls').length + 1;
         $per_step = 100 / $length;
-        console.log($per_step);
+        jQuery('.progress-holder').css('--progress-width', $per_step)
         jQuery('.fieldset-cf7mls').each(function(index, element) {
-            jQuery(this).attr('progress-width', $key * $per_step);
+            jQuery(this).attr('progress-width', $key * $per_step + '%');
             $key++;
         });
 
