@@ -47,14 +47,7 @@ p {
 a {
     text-decoration: none;
 }
-.wpcf7-submit.wpcf7-submit.wpcf7-submit {
-    @include button-style;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    @include on-event {
-        background-color: var(--secondary-color);
-    }
-}
+
 .button-box.button-box {
     @include button {
         @include button-style;
@@ -632,7 +625,6 @@ textarea {
             }
         }
     }
- 
 }
 
 .form-section {
@@ -720,7 +712,7 @@ textarea {
     }
 }
 .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance {
-    max-width: 400px;
+    max-width: 358px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -739,6 +731,16 @@ textarea {
             width: 20px;
             margin-top: 4px;
             margin-right: 10px;
+        }
+    }
+}
+.wpcf7-form.wpcf7-form {
+    .wpcf7-submit.wpcf7-submit.wpcf7-submit {
+        @include button-style;
+        background-color: var(--accent-color);
+        color: var(--white-color);
+        @include on-event {
+            background-color: var(--secondary-color);
         }
     }
 }
