@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 });
 
 function anchor_scroll() {
-	var $root = $('html, body');
+	var $root = jQuery('html, body');
 
 	jQuery('a[href^="#"]').click(function () {
 		$root.animate({
