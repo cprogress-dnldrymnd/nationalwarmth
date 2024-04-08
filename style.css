@@ -9838,6 +9838,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*-----------------------------------------------------------------------------------*/
 /* Base
 /*-----------------------------------------------------------------------------------*/
+:root {
+  scroll-behavior: initial; }
+
 html,
 body {
   position: relative; }
