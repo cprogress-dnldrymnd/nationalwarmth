@@ -13,7 +13,7 @@ function anchor_scroll() {
 
 	jQuery('a[href^="#"]').click(function () {
 		$root.animate({
-			scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top - 80
+			scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top - 100
 		}, 800);
 
 		return false;
