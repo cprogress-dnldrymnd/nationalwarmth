@@ -14,11 +14,6 @@ $SVG = new SVG();
 				<div class="column-holder">
 					<nav class="navbar navbar-expand-lg p-0">
 						<div class="collapse navbar-collapse justify-content-end" id="navbarMain">
-							<div class="d-block d-lg-none">
-								<?php 
-								get_template_part('template-parts/header/header', 'bottom') ;
-								?>
-							</div>
 							<?php
 							wp_nav_menu(array(
 								'theme_location' => 'header-menu',
