@@ -10976,6 +10976,9 @@ section.header-navigation .button-box a svg {
     margin-bottom: 20px; } }
 section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
   font-size: 1.125rem; }
+  @media screen and (max-width: 991px) {
+    section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
+      margin-top: 20px; } }
   @media screen and (min-width: 992px) {
     section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) {
       padding-left: 1rem;
