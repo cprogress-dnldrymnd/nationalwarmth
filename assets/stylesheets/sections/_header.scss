@@ -5,8 +5,10 @@ section.header-navigation {
 		}
 		@include responsive(xs-sm) {
 			width: 100%;
-			min-height: 85px;
 		}
+	}
+	@include responsive(xs-sm) {
+		min-height: 85px;
 	}
 	.button-box {
 		a {

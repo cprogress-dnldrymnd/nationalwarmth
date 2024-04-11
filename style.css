@@ -10963,6 +10963,9 @@ h5 {
     max-width: 100%; } }
 @media screen and (max-width: 991px) {
   section.header-navigation .container {
+    width: 100%; } }
+@media screen and (max-width: 991px) {
+  section.header-navigation {
     width: 100%;
     min-height: 85px; } }
 section.header-navigation .button-box a svg {
