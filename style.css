@@ -10958,7 +10958,7 @@ h5 {
 /*-----------------------------------------------------------------------------------*/
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
-@media (max-wi: 1399px) {
+@media (max-width: 1399px) {
   section.header-navigation .container {
     max-width: 100%; } }
 section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
