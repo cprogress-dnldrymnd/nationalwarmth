@@ -7,6 +7,7 @@ function menu_locations() {
 		array(
 
 			'header-menu' => __('Header Menu'),
+			'mobile-menu' => __('Mobile Menu'),
 			'header-right-menu' => __('Header Right Menu'),
 			'footer-menu' => __('Footer Menu'),
 		)
