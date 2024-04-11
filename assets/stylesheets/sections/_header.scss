@@ -101,8 +101,8 @@ section.header-navigation {
 			}
 			@include responsive(xs-sm) {
 				position: fixed;
-				top: 101px !important;
-				height: calc(100% - 101px) !important;
+				top: 85px !important;
+				height: calc(100% - 85px) !important;
 				width: 100%;
 				bottom: 0 !important;
 				padding-top: 0;
@@ -298,8 +298,8 @@ section.header-icon-list {
 		.navbar {
 			.navbar-collapse {
 				@include responsive(xs-sm) {
-					top: calc(101px + 32px) !important;
-					height: calc(100% - 101px - 32px) !important;
+					top: calc(85px + 32px) !important;
+					height: calc(100% - 85px - 32px) !important;
 					@media (max-width: 782px) {
 						top: calc(99px + 46px) !important;
 						height: calc(100% - 99px - 46px) !important;

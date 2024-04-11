@@ -28,9 +28,7 @@ main {
         margin-top: 85px;
     }
    
-    @include responsive(mobile) {
-        margin-top: 80.61px;
-    }
+   
 }
 section {
     position: relative;
