@@ -16,17 +16,19 @@ get_header(); // This fxn gets the header.php file and renders it
 		// If we have a post to show, start a loop that will display it
 	?>
 
-		<?php
-		if (!get__post_meta('hide_page_banner')) {
-			if (get_post_type() != 'landingpages'&& get_post_type() != 'post' && get_post_type() != 'partners') {
-				get_template_part('template-parts/section/content', 'banner');
-			} 
-			if(get_post_type() == 'post') {
-				get_template_part('template-parts/archive/archive', 'banner');
+		<main>
+			<?php
+			if (!get__post_meta('hide_page_banner')) {
+				if (get_post_type() != 'landingpages' && get_post_type() != 'post' && get_post_type() != 'partners') {
+					get_template_part('template-parts/section/content', 'banner');
+				}
+				if (get_post_type() == 'post') {
+					get_template_part('template-parts/archive/archive', 'banner');
+				}
 			}
-		}
-		?>
-		<?php get_template_part('template-parts/single/content-post', get_post_type()) ?>
+			?>
+			<?php get_template_part('template-parts/single/content-post', get_post_type()) ?>
+		</main>
 
 
 	<?php endwhile; // OK, let's stop the post loop once we've displayed it 
