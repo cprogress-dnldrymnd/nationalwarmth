@@ -5,12 +5,12 @@ $SVG = new SVG();
 <section class="header-navigation background-white py-3 px-4 px-sm-0">
 	<div class="container">
 		<div class="row align-items-center justify-content-between">
-			<div class="col-lg-3 col-md-4 col-8">
+			<div class="col-lg-3 col-8">
 				<div class="column-holder">
 					<?= $Theme_Options->logo ?>
 				</div>
 			</div>
-			<div class="col-lg-9 col-md-8 col-4">
+			<div class="col-lg-9 col-4">
 				<div class="column-holder">
 					<nav class="navbar navbar-expand-lg p-0">
 						<div class="collapse navbar-collapse justify-content-end" id="navbarMain">
