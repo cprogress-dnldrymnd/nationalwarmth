@@ -10519,6 +10519,12 @@ textarea {
   .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:hover, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:active, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nice-select.open, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:focus {
     background-color: var(--accent-color); }
 
+@media screen and (max-width: 991px) {
+  [data-aos] {
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible; } }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");

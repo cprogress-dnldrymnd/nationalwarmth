@@ -748,3 +748,11 @@ textarea {
         }
     }
 }
+
+[data-aos] {
+    @include responsive(xs-sm) {
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible;
+    }
+}
