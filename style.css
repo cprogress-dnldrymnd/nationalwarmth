@@ -11014,7 +11014,7 @@ section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
       border-color: var(--primary-color); }
       @media screen and (max-width: 991px) {
         section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:hover, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:active, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link.nice-select.open, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:focus {
-          border-color: var(--white-color); } }
+          background-color: var(--accent-color); } }
   @media screen and (min-width: 992px) {
     section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item + .button-box {
       margin-left: 1.25rem; } }
