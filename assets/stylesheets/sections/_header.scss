@@ -1,7 +1,17 @@
 section.header-navigation {
 	.container {
-		@media(max-width: 1399px) {
+		@media (max-width: 1399px) {
 			max-width: 100%;
+		}
+	}
+	.button-box {
+		a {
+			svg {
+				margin-right: 1rem;
+			}
+			@include responsive(xs-sm) {
+				width: 100%;
+			}
 		}
 	}
 	.navbar {
@@ -24,6 +34,12 @@ section.header-navigation {
 								min-width: 194px;
 								text-align: center;
 								font-size: 18px;
+								background-color: var(--secondary-color);
+								border: none;
+								padding-top: 20px;
+								padding-bottom: 20px;
+								border-top: 1px solid white;
+								border-bottom: 1px solid white;
 							}
 							@include on-event {
 								border-color: var(--primary-color);
@@ -52,9 +68,7 @@ section.header-navigation {
 						}
 					}
 					@include responsive(xs-sm) {
-						@include not-last-child {
-							margin-bottom: 1.5rem;
-						}
+						width: 100%;
 					}
 				}
 			}

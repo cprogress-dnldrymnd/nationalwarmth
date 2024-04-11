@@ -10850,6 +10850,9 @@ textarea {
 .light-color {
   color: var(--light-color); }
 
+.white-color {
+  color: var(--white-color); }
+
 /*container*/
 @media screen and (min-width: 1400px) {
   .medium-container {
@@ -10961,6 +10964,11 @@ h5 {
 @media (max-width: 1399px) {
   section.header-navigation .container {
     max-width: 100%; } }
+section.header-navigation .button-box a svg {
+  margin-right: 1rem; }
+@media screen and (max-width: 991px) {
+  section.header-navigation .button-box a {
+    width: 100%; } }
 section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
   font-size: 1.125rem; }
   @media screen and (min-width: 992px) {
@@ -10977,7 +10985,13 @@ section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
         padding-bottom: 0;
         min-width: 194px;
         text-align: center;
-        font-size: 18px; } }
+        font-size: 18px;
+        background-color: var(--secondary-color);
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white; } }
     section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:hover, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:active, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link.nice-select.open, section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(.button-box) a.nav-link:focus {
       border-color: var(--primary-color); }
       @media screen and (max-width: 991px) {
@@ -10995,8 +11009,8 @@ section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
     section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item.button-box + .button-box {
       margin-left: 10px; } }
   @media screen and (max-width: 991px) {
-    section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item:not(:last-child) {
-      margin-bottom: 1.5rem; } }
+    section.header-navigation .navbar .navbar-collapse ul.navbar-nav li.menu-item {
+      width: 100%; } }
 @media screen and (max-width: 991px) {
   section.header-navigation .navbar .navbar-collapse {
     position: fixed;
