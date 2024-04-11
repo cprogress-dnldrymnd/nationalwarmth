@@ -133,17 +133,7 @@ section.page-banner {
 		}
 	}
 
-	@include responsive(xs-sm) {
-		margin-top: 89.66px;
-	}
 
-	@include responsive(xs) {
-		margin-top: 87.66px;
-	}
-
-	@include responsive(mobile) {
-		margin-top: 71.88px;
-	}
 }
 
 section.thank-you {

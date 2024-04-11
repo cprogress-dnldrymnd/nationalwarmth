@@ -25,11 +25,9 @@ body {
 }
 main {
     @include responsive(xs-sm) {
-        margin-top: 101px;
+        margin-top: 85px;
     }
-    @include responsive(99px) {
-        margin-top: 101px;
-    }
+   
     @include responsive(mobile) {
         margin-top: 80.61px;
     }

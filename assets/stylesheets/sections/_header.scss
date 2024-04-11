@@ -134,7 +134,7 @@ section.header-navigation {
 		img {
 			max-height: 70px;
 			@include responsive(mobile) {
-				max-height: 70px;
+				max-height: 55px;
 			}
 		}
 	}
