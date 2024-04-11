@@ -18,7 +18,7 @@ $SVG = new SVG();
 							wp_nav_menu(array(
 								'theme_location' => 'header-menu',
 								'container' => false,
-								'menu_class' => '',
+								'menu_class' => 'd-none d-lg-block',
 								'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
 								'items_wrap' => '<ul id="%1$s" class="navbar-nav align-items-center fw-light mt-5 mt-lg-0 %2$s">%3$s</ul>',
 								'depth' => 2,
