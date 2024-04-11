@@ -23,6 +23,9 @@ section.header-navigation {
 		.navbar-collapse {
 			ul.navbar-nav {
 				font-size: 1.125rem;
+				@include responsive(xs-sm) {
+					margin-top: 20px;
+				}
 				li.menu-item {
 					&:not(.button-box) {
 						@include responsive(md-lg) {
