@@ -3,7 +3,7 @@ $Theme_Options = new Theme_Options;
 $header_icon_menu = $Theme_Options->header_icon_menu;
 ?>
 
-<section class="header-bottom header-icon-list small-text d-none d-lg-block">
+<section class="header-bottom header-icon-list small-text">
 	<div class="header-bottom-holder background-secondary">
 		<div class="container-fluid">
 			<ul class="d-flex justify-content-center align-items-center list-inline row mb-0 fw-light g-0 flex-wrap flex-lg-nowrap">
