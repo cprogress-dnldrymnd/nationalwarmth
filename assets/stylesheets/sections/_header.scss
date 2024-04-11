@@ -1,4 +1,9 @@
 section.header-navigation {
+	.container {
+		@media(max-wi: 1399px) {
+			max-width: 100%;
+		}
+	}
 	.navbar {
 		.navbar-collapse {
 			ul.navbar-nav {
@@ -90,9 +95,9 @@ section.header-navigation {
 	}
 	.site-logo {
 		img {
-			max-width: 195px;
+			max-height: 70px;
 			@include responsive(mobile) {
-				max-width: 150px;
+				max-height: 70px;
 			}
 		}
 	}
@@ -149,6 +154,7 @@ section.header-navigation {
 			}
 		}
 	}
+
 	section.header-bottom {
 		.container {
 			@include responsive(xs-sm) {

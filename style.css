@@ -10958,6 +10958,9 @@ h5 {
 /*-----------------------------------------------------------------------------------*/
 /* Header & Footer
 /*-----------------------------------------------------------------------------------*/
+@media (max-wi: 1399px) {
+  section.header-navigation .container {
+    max-width: 100%; } }
 section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
   font-size: 1.125rem; }
   @media screen and (min-width: 992px) {
@@ -11031,10 +11034,10 @@ section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
       height: calc(100% - 80.61px) !important; } }
 
 section.header-navigation .site-logo img {
-  max-width: 195px; }
+  max-height: 70px; }
   @media screen and (max-width: 575px) {
     section.header-navigation .site-logo img {
-      max-width: 150px; } }
+      max-height: 70px; } }
 section.header-navigation .navbar-toggler.navbar-toggler {
   position: relative;
   z-index: 1;
