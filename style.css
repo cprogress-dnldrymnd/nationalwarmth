@@ -9858,6 +9858,9 @@ body {
 
 @media screen and (max-width: 991px) {
   main {
+    margin-top: 100px; } }
+@media screen and (max-width: 767px) {
+  main {
     margin-top: 85px; } }
 
 section {
@@ -10966,7 +10969,6 @@ h5 {
     width: 100%; } }
 @media screen and (max-width: 991px) {
   section.header-navigation {
-    width: 100%;
     min-height: 85px; } }
 section.header-navigation .button-box a svg {
   margin-right: 1rem; }
