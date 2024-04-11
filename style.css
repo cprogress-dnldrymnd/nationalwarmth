@@ -10969,6 +10969,10 @@ section.header-navigation .button-box a svg {
 @media screen and (max-width: 991px) {
   section.header-navigation .button-box a {
     width: 100%; } }
+@media screen and (max-width: 991px) {
+  section.header-navigation .button-box {
+    padding-left: 20px;
+    padding-right: 20px; } }
 section.header-navigation .navbar .navbar-collapse ul.navbar-nav {
   font-size: 1.125rem; }
   @media screen and (min-width: 992px) {

@@ -13,6 +13,10 @@ section.header-navigation {
 				width: 100%;
 			}
 		}
+		@include responsive(xs-sm) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 	.navbar {
 		.navbar-collapse {
