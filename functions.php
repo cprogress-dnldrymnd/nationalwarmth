@@ -199,7 +199,10 @@ function action_wp_footer()
 				AOS.init({
 					duration: 1000,
 					once: true,
-					disable: 'mobile'
+					disable: function() {
+						var maxWidth = 991;
+						return window.innerWidth < maxWidth;
+					}
 				});
 			}, 1000);
 		});
