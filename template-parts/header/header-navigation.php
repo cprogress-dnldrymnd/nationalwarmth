@@ -32,7 +32,7 @@ $SVG = new SVG();
 								'container' => false,
 								'menu_class' => 'd-flex d-lg-none',
 								'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-								'items_wrap' => '<ul id="%1$s" class="navbar-nav align-items-center fw-light mt-3 %2$s">%3$s</ul>',
+								'items_wrap' => '<ul id="%1$s" class="navbar-nav align-items-center fw-light %2$s">%3$s</ul>',
 								'depth' => 2,
 								'walker' => new bootstrap_5_wp_nav_menu_walker()
 							));
