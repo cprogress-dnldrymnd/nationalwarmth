@@ -51,6 +51,9 @@ section.footer-navigation {
 		overflow: visible;
 
 	}
+	.action-button {
+		display: none !important
+	}
 	img {
 		@include responsive(md-lg) {
 			margin-top: -40px;
