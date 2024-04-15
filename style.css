@@ -11286,7 +11286,7 @@ section.footer-navigation {
   font-size: 20px; }
   #footerForm .offcanvas-body {
     overflow: visible; }
-  #footerForm .action-button {
+  #footerForm .cf7mls_back {
     display: none !important; }
   @media screen and (min-width: 992px) {
     #footerForm img {
