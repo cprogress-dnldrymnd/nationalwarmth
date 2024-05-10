@@ -164,6 +164,7 @@ function swiper_slider() {
 			delay: 5000,
 			disableOnInteraction: true,
 		},
+		spaceBetween: 30,
 		breakpoints: {
 			0: {
 				slidesPerView: 3,
