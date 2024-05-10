@@ -9863,6 +9863,9 @@ body {
   main {
     margin-top: 85px; } }
 
+.page-components {
+  overflow: hidden; }
+
 section {
   position: relative;
   overflow: hidden; }
