@@ -169,6 +169,22 @@ function get__post_thumbnail_id($post_id)
 /*-----------------------------------------------------------------------------------*/
 function enqueue_scripts()
 {
+	wp_dequeue_style('wp-block-library');
+
+
+	// This also removes some inline CSS variables for colors since 5.9 - global-styles-inline-css
+	wp_dequeue_style('global-styles');
+
+
+	// WooCommerce - you can remove the following if you don't use Woocommerce
+	wp_dequeue_style('wc-block-style');
+	wp_dequeue_style('wc-blocks-vendors-style');
+	wp_dequeue_style('wc-blocks-style');
+
+
+	// since 6.1 or so, WP has been adding this nonsense
+	wp_dequeue_style('classic-theme-styles');
+
 	wp_enqueue_style('tissue-paper-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
 	wp_enqueue_style('tissue-paper-style', theme_dir . 'style.css');
 
