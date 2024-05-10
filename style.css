@@ -11718,7 +11718,6 @@ section.contact-form {
     height: 100px; }
 
 .text-section .description-box {
-  line-height: 1.6;
   font-weight: 300; }
   .text-section .description-box ul li:not(:last-child),
   .text-section .description-box ol li:not(:last-child) {
