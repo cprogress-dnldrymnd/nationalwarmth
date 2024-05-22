@@ -10533,6 +10533,9 @@ textarea {
 .fsForm {
   font-family: var(--primary-font); }
 
+.fsRequiredMarker {
+  color: #e53f1e; }
+
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/outfit/Outfit-Light.eot");
