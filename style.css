@@ -10437,22 +10437,29 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
   display: none; }
 
-.form-style-1, .fsForm {
+.form-style-1,
+.fsForm {
   font-size: 16px; }
-  .form-style-1 .row [class*="col"] > label, .fsForm .row [class*="col"] > label {
+  .form-style-1 .row [class*="col"] > label,
+  .fsForm .row [class*="col"] > label {
     width: 100%; }
-    .form-style-1 .row [class*="col"] > label > span, .fsForm .row [class*="col"] > label > span {
+    .form-style-1 .row [class*="col"] > label > span,
+    .fsForm .row [class*="col"] > label > span {
       display: block;
       text-align: left; }
-      .form-style-1 .row [class*="col"] > label > span .required, .fsForm .row [class*="col"] > label > span .required {
+      .form-style-1 .row [class*="col"] > label > span .required,
+      .fsForm .row [class*="col"] > label > span .required {
         color: #e53f1e; }
   .form-style-1 .row input,
-  .form-style-1 .row textarea, .fsForm .row input,
+  .form-style-1 .row textarea,
+  .fsForm .row input,
   .fsForm .row textarea {
     width: 100%; }
-  .form-style-1 .row textarea, .fsForm .row textarea {
+  .form-style-1 .row textarea,
+  .fsForm .row textarea {
     height: 105px; }
-  .form-style-1 .wpcf7-form-control-wrap, .fsForm .wpcf7-form-control-wrap {
+  .form-style-1 .wpcf7-form-control-wrap,
+  .fsForm .wpcf7-form-control-wrap {
     margin-top: 14px; }
 
 .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance {
@@ -10474,7 +10481,7 @@ textarea {
       margin-top: 4px;
       margin-right: 10px; }
 
-.wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit {
+.wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit, .fsForm.fsForm .fsSubmitButton.fsSubmitButton {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -10502,26 +10509,26 @@ textarea {
   color: var(--white-color);
   max-width: 385px;
   width: 100%; }
-  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span {
+  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span, .fsForm.fsForm .fsSubmitButton.fsSubmitButton span {
     position: relative;
     z-index: 1; }
-    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span:not(:last-child) {
+    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span:not(:last-child), .fsForm.fsForm .fsSubmitButton.fsSubmitButton span:not(:last-child) {
       margin-right: 0.75rem; }
-    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span.icon {
+    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span.icon, .fsForm.fsForm .fsSubmitButton.fsSubmitButton span.icon {
       margin-top: -3px; }
-  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:not(.nav-link) {
+  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:not(.nav-link), .fsForm.fsForm .fsSubmitButton.fsSubmitButton:not(.nav-link) {
     border: 2px solid transparent;
     padding: 10px 1.5rem; }
-  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nav-link {
+  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nav-link, .fsForm.fsForm .fsSubmitButton.fsSubmitButton.nav-link {
     padding: 10px 1.5rem;
     border: 1px solid transparent; }
   @media screen and (min-width: 992px) {
-    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit {
+    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit, .fsForm.fsForm .fsSubmitButton.fsSubmitButton {
       white-space: nowrap; } }
   @media screen and (max-width: 767px) {
-    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit {
+    .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit, .fsForm.fsForm .fsSubmitButton.fsSubmitButton {
       padding: 1rem 1.5rem; } }
-  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:hover, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:active, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nice-select.open, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:focus {
+  .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:hover, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:active, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit.nice-select.open, .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit:focus, .fsForm.fsForm .fsSubmitButton.fsSubmitButton:hover, .fsForm.fsForm .fsSubmitButton.fsSubmitButton:active, .fsForm.fsForm .fsSubmitButton.fsSubmitButton.nice-select.open, .fsForm.fsForm .fsSubmitButton.fsSubmitButton:focus {
     background-color: var(--accent-color); }
 
 @media screen and (max-width: 991px) {

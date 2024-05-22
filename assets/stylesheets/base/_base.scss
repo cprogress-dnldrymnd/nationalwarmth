@@ -141,7 +141,7 @@ input:not([type="submit"]):not(.qty):not([type="checkbox"]):not([type="radio"]):
 select,
 textarea {
     border-radius: 5px !important;
-    border: 2px solid var(--primary-color)!important;
+    border: 2px solid var(--primary-color) !important;
     outline: none !important;
     padding: 13px !important;
     line-height: 1 !important;
@@ -690,7 +690,8 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
     display: none;
 }
-.form-style-1, .fsForm {
+.form-style-1,
+.fsForm {
     font-size: 16px;
 
     .row {
@@ -704,17 +705,16 @@ textarea {
                         color: #e53f1e;
                     }
                 }
-              
+            }
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        textarea {
+            height: 105px;
         }
     }
-    input,
-    textarea {
-        width: 100%;
-    }
-    textarea {
-        height: 105px;
-    }
-}
     .wpcf7-form-control-wrap {
         margin-top: 14px;
     }
@@ -741,16 +741,14 @@ textarea {
         }
     }
 }
-.wpcf7-form.wpcf7-form {
-    .wpcf7-submit.wpcf7-submit.wpcf7-submit {
-        @include button-style;
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-        max-width: 385px;
-        width: 100%;
-        @include on-event {
-            background-color: var(--accent-color);
-        }
+.wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit, .fsForm.fsForm .fsSubmitButton.fsSubmitButton {
+    @include button-style;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    max-width: 385px;
+    width: 100%;
+    @include on-event {
+        background-color: var(--accent-color);
     }
 }
 
