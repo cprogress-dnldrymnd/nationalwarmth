@@ -10555,7 +10555,7 @@ textarea {
   padding: 0;
   font-family: var(--primary-font); }
 
-.fsRequiredMarker {
+.fsRequiredMarker.fsRequiredMarker.fsRequiredMarker {
   color: #e53f1e; }
 
 @font-face {
