@@ -741,7 +741,8 @@ textarea {
         }
     }
 }
-.wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit, .fsForm.fsForm .fsSubmitButton.fsSubmitButton {
+.wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit,
+.fsForm.fsForm .fsSubmitButton.fsSubmitButton {
     @include button-style;
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -759,9 +760,14 @@ textarea {
         visibility: visible;
     }
 }
-
-.fsForm {
-    font-family: var(--primary-font);
+.fsBody.fsBody.fsBody {
+    > div {
+        padding: 0;
+    }
+    .fsForm {
+        padding: 0;
+        font-family: var(--primary-font);
+    }
 }
 
 .fsRequiredMarker {
