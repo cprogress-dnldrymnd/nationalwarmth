@@ -10437,21 +10437,22 @@ textarea {
 .offcanvas-backdrop.offcanvas-backdrop {
   display: none; }
 
-.form-style-1 {
+.form-style-1, fsForm {
   font-size: 16px; }
-  .form-style-1 .row [class*="col"] > label {
+  .form-style-1 .row [class*="col"] > label, fsForm .row [class*="col"] > label {
     width: 100%; }
-    .form-style-1 .row [class*="col"] > label > span {
+    .form-style-1 .row [class*="col"] > label > span, fsForm .row [class*="col"] > label > span {
       display: block;
       text-align: left; }
-      .form-style-1 .row [class*="col"] > label > span .required {
+      .form-style-1 .row [class*="col"] > label > span .required, fsForm .row [class*="col"] > label > span .required {
         color: #e53f1e; }
   .form-style-1 .row input,
-  .form-style-1 .row textarea {
+  .form-style-1 .row textarea, fsForm .row input,
+  fsForm .row textarea {
     width: 100%; }
-  .form-style-1 .row textarea {
+  .form-style-1 .row textarea, fsForm .row textarea {
     height: 105px; }
-  .form-style-1 .wpcf7-form-control-wrap {
+  .form-style-1 .wpcf7-form-control-wrap, fsForm .wpcf7-form-control-wrap {
     margin-top: 14px; }
 
 .wpcf7-acceptance.wpcf7-acceptance.wpcf7-acceptance {
