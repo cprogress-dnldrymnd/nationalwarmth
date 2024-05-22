@@ -29,12 +29,12 @@
 <script>
     var myOffcanvas = document.getElementById('footerForm')
     var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
-    bsOffcanvas.show();
+    
     jQuery(document).ready(function() {
-
         if (!getCookie('energy_matters_display')) {
-
             setCookie('energy_matters_display', 'false', 1);
+        } else {
+            bsOffcanvas.show();
         }
     });
 
