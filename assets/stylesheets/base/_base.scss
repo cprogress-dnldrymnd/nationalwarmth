@@ -748,6 +748,7 @@ textarea {
     color: var(--white-color);
     max-width: 385px;
     width: 100%;
+    font-size: 16px;
     @include on-event {
         background-color: var(--accent-color);
     }
@@ -767,6 +768,9 @@ textarea {
     .fsForm {
         padding: 0;
         font-family: var(--primary-font);
+    }
+    .fsPagination {
+        margin-top: 0;
     }
 }
 

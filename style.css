@@ -10509,7 +10509,8 @@ textarea {
   background-color: var(--secondary-color);
   color: var(--white-color);
   max-width: 385px;
-  width: 100%; }
+  width: 100%;
+  font-size: 16px; }
   .wpcf7-form.wpcf7-form .wpcf7-submit.wpcf7-submit.wpcf7-submit span,
   .fsForm.fsForm .fsSubmitButton.fsSubmitButton span {
     position: relative;
@@ -10554,6 +10555,8 @@ textarea {
 .fsBody.fsBody.fsBody .fsForm {
   padding: 0;
   font-family: var(--primary-font); }
+.fsBody.fsBody.fsBody .fsPagination {
+  margin-top: 0; }
 
 .fsRequiredMarker.fsRequiredMarker.fsRequiredMarker {
   color: #e53f1e; }
